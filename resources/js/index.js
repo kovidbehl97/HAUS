@@ -1,81 +1,136 @@
+let grade1 = document.getElementById("grade-1-content")
+let grade2 = document.getElementById("grade-2-content")
+let grade3 = document.getElementById("grade-3-content")
+let grade4 = document.getElementById("grade-4-content")
+let grade5 = document.getElementById("grade-5-content")
 function firstGrade(){
-    let grade1 = document.getElementById("grade-1-content")
     if (grade1.style.display === "block"){
         grade1.style.display = "none"
     }else{
         grade1.style.display = "block"
+        grade2.style.display = "none"
+        grade3.style.display = "none"
+        grade4.style.display = "none"
+        grade5.style.display = "none"
     }     
 }
 function secondGrade(){
-    let grade2 = document.getElementById("grade-2-content")
     if (grade2.style.display === "block"){
         grade2.style.display = "none"
     }else{
         grade2.style.display = "block"
+        grade1.style.display = "none"
+        grade3.style.display = "none"
+        grade4.style.display = "none"
+        grade5.style.display = "none"
     }     
 }
 function thirdGrade(){
-    let grade3 = document.getElementById("grade-3-content")
     if (grade3.style.display === "block"){
         grade3.style.display = "none"
     }else{
         grade3.style.display = "block"
+        grade1.style.display = "none"
+        grade2.style.display = "none"
+        grade4.style.display = "none"
+        grade5.style.display = "none"
     }     
 }
 function fourthGrade(){
-    let grade4 = document.getElementById("grade-4-content")
     if (grade4.style.display === "block"){
         grade4.style.display = "none"
     }else{
         grade4.style.display = "block"
+        grade1.style.display = "none"
+        grade2.style.display = "none"
+        grade3.style.display = "none"
+        grade5.style.display = "none"
     }     
 }
 function fifthGrade(){
-    let grade5 = document.getElementById("grade-5-content")
     if (grade5.style.display === "block"){
         grade5.style.display = "none"
     }else{
         grade5.style.display = "block"
+        grade1.style.display = "none"
+        grade2.style.display = "none"
+        grade3.style.display = "none"
+        grade4.style.display = "none"
     }     
 }
 function firsthGradeNav(){
-    let grade1 = document.getElementById("grade-1-content")
     if (grade1.style.display === "none"){
         grade1.style.display = "block"
+        grade2.style.display = "none"
+        grade3.style.display = "none"
+        grade4.style.display = "none"
+        grade5.style.display = "none"
     }else{
         grade1.style.display = "block"
+        grade2.style.display = "none"
+        grade3.style.display = "none"
+        grade4.style.display = "none"
+        grade5.style.display = "none"
     }   
 }
 function secondGradeNav(){
-    let grade2 = document.getElementById("grade-2-content")
     if (grade2.style.display === "none"){
         grade2.style.display = "block"
+        grade1.style.display = "none"
+        grade3.style.display = "none"
+        grade4.style.display = "none"
+        grade5.style.display = "none"
     }else{
         grade2.style.display = "block"
+        grade1.style.display = "none"
+        grade3.style.display = "none"
+        grade4.style.display = "none"
+        grade5.style.display = "none"
     }    
 }
 function thirdGradeNav(){
-    let grade3 = document.getElementById("grade-3-content")
     if (grade3.style.display === "none"){
         grade3.style.display = "block"
+        grade1.style.display = "none"
+        grade2.style.display = "none"
+        grade4.style.display = "none"
+        grade5.style.display = "none"
     }else{
         grade3.style.display = "block"
+        grade1.style.display = "none"
+        grade2.style.display = "none"
+        grade4.style.display = "none"
+        grade5.style.display = "none"
     }    
 }
 function fourthGradeNav(){
-    let grade4 = document.getElementById("grade-4-content")
     if (grade4.style.display === "none"){
         grade4.style.display = "block"
+        grade1.style.display = "none"
+        grade2.style.display = "none"
+        grade3.style.display = "none"
+        grade5.style.display = "none"
     }else{
         grade4.style.display = "block"
+        grade1.style.display = "none"
+        grade2.style.display = "none"
+        grade3.style.display = "none"
+        grade5.style.display = "none"
     }    
 }
 function fifthGradeNav(){
-    let grade5 = document.getElementById("grade-5-content")
     if (grade5.style.display === "none"){
         grade5.style.display = "block"
+        grade1.style.display = "none"
+        grade2.style.display = "none"
+        grade3.style.display = "none"
+        grade4.style.display = "none"
     }else{
         grade5.style.display = "block"
+        grade1.style.display = "none"
+        grade2.style.display = "none"
+        grade3.style.display = "none"
+        grade4.style.display = "none"
     }    
 }
 function sub(){
