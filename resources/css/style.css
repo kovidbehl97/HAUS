@@ -1,0 +1,237 @@
+/* -------css reset---------- */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* ------global styling------- */
+
+.row{
+    max-width: 1300px;
+    margin: auto;
+}
+li{
+    list-style-type: none;
+}
+.heading{
+    font-family: 'Lato',sans-serif;
+    font-weight: 300;
+    font-size: 250%;
+    margin-top: 100px;
+    padding: 10px;
+    text-align: center;
+}
+.heading-decoration{
+    display: block;
+    border-top: 3px solid #00251d;
+    margin: 0 47%;
+    margin-bottom: 20px;
+    padding: 0;
+}
+/* ------main section--------- */
+
+header{
+    height: 83vh;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    
+}
+#logo{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#logo h2{
+    margin-right: 30vh;
+    font-family: 'Amatic SC',sans-serif;
+    font-size: 200%;
+}
+#logo img{
+    margin: 40px;
+    max-width: 70px;
+    margin-left: 20vh;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #00251d;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 100;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 110%;
+    padding: 5px 5px 5px 30px;
+    border-left: 1px solid #013f1d;
+}
+nav a:hover,
+nav a:active{
+    color: #aed1c8;
+}
+.last-child{
+    border-right: 1px solid #013f1d;
+    padding-right:30px ;
+    padding: 5px 30px 5px 30px;
+}
+nav > ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#menu > li{
+    padding: 15px;
+    border-radius: 3px;
+}
+#menu > li:hover,
+#menu > li:active {
+    cursor: pointer;
+}
+#subjects{
+    display: none;
+    position: absolute;
+    margin-top: 14px;
+    width: 160px;
+}
+#subjects li{
+    padding: 10px 15px;
+    background-color: #00251d;
+}
+#subjects a{
+    border: none;
+    padding: 5px 30px 5px 0;
+    text-align: center;
+}
+#gradesNav{
+    display: none;
+    position: absolute;
+    margin-top: 14px;
+    width: 150px;
+}
+#gradesNav li{
+    padding: 10px 15px;
+    background-color: #00251d;
+}
+#gradesNav a:hover,
+#gradesNav a:active{
+    color: #074722;
+}
+#gradesNav a{
+    border: none;
+    padding: 5px 30px 5px 0;
+    text-align: center;
+}
+#maths{
+    display: none;
+}
+#science{
+    display: none;
+}
+#sst{
+    display: none;
+}
+#main-content{
+    height: 100%;
+    padding-bottom: 200px;
+    font-family: 'Lato',sans-serif;
+    background-image:linear-gradient(#000000,#20945e91,#000000), url("/resources/css/images/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+#main-content h1{
+    position: relative;
+    top: 35%;
+    font-weight: 400;
+    font-size:350%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+}
+#main-content h1 img{
+    max-width: 50px;
+    margin-left: 20px;
+}
+#main-content h2{
+    text-align: center;
+    position: relative;
+    top: 35%;
+    font-weight: 100;
+    font-size:250%;
+}
+#main-content h3,
+#main-content h4{
+    text-align: center;
+    position: relative;
+    top: 35%;
+    font-weight: 500;
+    font-size: 130%;
+}
+
+/* -----curriculum section---- */
+
+.grade{
+    border: 1px solid gray;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-family: 'Lato',sans-serif;
+    font-weight: 30;
+    font-size: 150%;
+    padding: 10px;
+    text-align: center;
+}
+.grade:hover{
+    cursor: pointer;
+    color: #00b14a;
+    border: 1px solid #00b14a;
+}
+.grade-content{
+    max-height: 75vh;
+    overflow-y: scroll;
+    display: none;
+}
+#curriculum-content{
+    min-height: 65vh;
+    box-shadow: 0 0 50px 2px #f3f3f3;
+    border-radius: 10px;
+    padding: 50px 10px;
+    margin-bottom: 200px;   
+}
+
+
+/* --------teachers' zone--------- */
+
+
+
+/* --------parents' zone---------- */
+
+
+
+/* ----------about us------------- */
+
+
+
+/* ---------contact us------------ */
+
+#contact-us{
+    text-align: center;
+}
+
+/* ------------footer------------- */
+
+footer{
+    height: 150px;
+    background-color: #00251d;
+    margin-top: 40px;
+}
