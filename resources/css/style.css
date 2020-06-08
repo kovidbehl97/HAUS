@@ -47,7 +47,7 @@ header{
 #logo h2{
     margin-right: 30vh;
     font-family: 'Amatic SC',sans-serif;
-    font-size: 200%;
+    font-size: 215%;
 }
 #logo img{
     margin: 40px;
@@ -65,6 +65,7 @@ nav{
     position: -webkit-sticky;
     top: 0;
     z-index: 100;
+    margin-top: 1px
 }
 nav a{
     text-decoration: none;
@@ -205,29 +206,48 @@ nav > ul{
     min-height: 65vh;
     box-shadow: 0 0 50px 2px #f3f3f3;
     border-radius: 10px;
-    padding: 50px 10px;
-    margin-bottom: 200px;   
+    padding: 50px 10px; 
 }
+/* -------------intro------------- */
 
-
-/* --------teachers' zone--------- */
-
-
-
-/* --------parents' zone---------- */
-
-
-
+#intro{
+    padding: 140px 130px 100px 130px;
+    margin: 0 auto;
+    font-family: 'Lato',sans-serif;
+    font-weight: 300;
+    font-size: 150%;
+    
+}
+#intro h2{
+    font-weight: 300;
+    text-align: center;
+}
+#intro span{
+    margin-bottom: 70px;
+}
 /* ----------about us------------- */
 
-
-
+#about-us{
+    height: 85vh;
+}
+.about-content{
+    font-family: 'Lato',sans-serif;
+    font-weight: 400;
+    font-size: 120%;
+}
+.about-content h3{
+    font-size: 180%;
+    font-weight: 300;
+    text-decoration: underline;
+}
 /* ---------contact us------------ */
 
 #contact-us{
     text-align: center;
 }
-
+#contact-us .heading-decoration{
+    margin-bottom: 35px;
+}
 /* ------------footer------------- */
 
 footer{
