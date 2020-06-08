@@ -144,7 +144,7 @@ nav > ul{
     height: 100%;
     padding-bottom: 200px;
     font-family: 'Lato',sans-serif;
-    background-image:linear-gradient(#000000,#20945e91,#000000), url(resources/css/images/background.jpg);
+    background-image:linear-gradient(#000000,#20945e91,#000000), url(images/background.jpg);
     background-size: cover;
     background-attachment: fixed;
 
