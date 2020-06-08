@@ -8,6 +8,9 @@
 
 /* ------global styling------- */
 
+html{
+    scroll-padding-top: 70px;
+}
 .row{
     max-width: 1300px;
     margin: auto;
