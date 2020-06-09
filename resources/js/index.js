@@ -178,3 +178,31 @@ function sst(){
         sst.style.display = "block"
     }
 }
+function scrollNav(){
+    let maths = document.getElementById('maths')
+    let science = document.getElementById('science')
+    let sst = document.getElementById('sst')
+    let gradeNav = document.getElementById("gradesNav")
+    let subjects = document.getElementById("subjects")
+    if (maths.style.display === "block"){
+        maths.style.display = "none"
+    }else{
+        maths.style.display = "none"
+    }
+    if (science.style.display === "block"){
+        science.style.display = "none"
+    }else{
+        science.style.display = "none"
+    }
+    if (sst.style.display === "block"){
+        sst.style.display = "none"
+    }else{
+        sst.style.display = "none"
+    }
+    if (gradeNav.style.display === "block"){
+        gradeNav.style.display = "none"
+    }else{
+        gradeNav.style.display = "none"
+        subjects.style.display = "none"
+    }
+}
