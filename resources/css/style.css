@@ -213,7 +213,7 @@ nav > ul{
     margin: 10px 0;
     border-radius: 5px;
     font-family: 'Raleway',sans-serif;
-    font-weight: 700;
+    font-weight: 300;
     font-size: 150%;
     padding: 10px;
     text-align: center;
@@ -261,7 +261,7 @@ nav > ul{
     margin-top: 200px;
 }
 #contact-us .heading-decoration{
-    margin-bottom: 35px;
+    margin-bottom: 60px;
 }
 
 /* ------------footer------------- */
