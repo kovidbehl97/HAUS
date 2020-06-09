@@ -33,13 +33,14 @@ li{
     margin-bottom: 20px;
     padding: 0;
 }
+
 /* ------main section--------- */
 
 header{
     height: 83vh;
     color: rgb(255, 255, 255);
     overflow: hidden;
-    
+    scroll-padding-top: 50px;
 }
 #logo{
     height: 90px;
@@ -48,13 +49,14 @@ header{
     justify-content: space-between;
 }
 #logo h2{
-    margin-right: 30vh;
-    font-family: 'Amatic SC',sans-serif;
+    margin-right: 20vh;
+    font-family: 'Changa',sans-serif;
+    font-weight: 400;
     font-size: 215%;
 }
 #logo img{
     margin: 40px;
-    max-width: 70px;
+    max-width: 95px;
     margin-left: 20vh;
 }
 nav{
@@ -105,7 +107,7 @@ nav > ul{
     display: none;
     position: absolute;
     margin-top: 14px;
-    width: 160px;
+    width: 163px;
 }
 #subjects li{
     padding: 10px 15px;
@@ -147,7 +149,7 @@ nav > ul{
 #main-content{
     height: 100%;
     padding-bottom: 200px;
-    font-family: 'Lato',sans-serif;
+    font-family: 'Raleway',sans-serif;
     background-image:linear-gradient(#000000,#20945e91,#000000), url(images/background.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -183,13 +185,34 @@ nav > ul{
     font-size: 130%;
 }
 
-/* -----curriculum section---- */
+/* -------------intro------------- */
+
+#intro{
+    padding: 100px 80px 60px 80px;
+    margin: 0 auto;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 300;
+    font-size: 150%;
+    
+}
+#intro h2{
+    font-weight: 300;
+    text-align: center;
+}
+#intro-big-word{
+    font-size: 150%;
+}
+#intro span:last-of-type{
+    font-weight: 300;
+}
+
+/* -------curriculum section------- */
 
 .grade{
     border: 1px solid gray;
     margin: 10px 0;
     border-radius: 5px;
-    font-family: 'Lato',sans-serif;
+    font-family: 'Raleway',sans-serif;
     font-weight: 30;
     font-size: 150%;
     padding: 10px;
@@ -211,47 +234,36 @@ nav > ul{
     border-radius: 10px;
     padding: 50px 10px; 
 }
-/* -------------intro------------- */
 
-#intro{
-    padding: 140px 130px 100px 130px;
-    margin: 0 auto;
-    font-family: 'Lato',sans-serif;
-    font-weight: 300;
-    font-size: 150%;
-    
-}
-#intro h2{
-    font-weight: 300;
-    text-align: center;
-}
-#intro span{
-    margin-bottom: 70px;
-}
 /* ----------about us------------- */
 
 #about-us{
-    height: 85vh;
+    height: 100vh;
 }
 .about-content{
-    font-family: 'Lato',sans-serif;
-    font-weight: 400;
-    font-size: 120%;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 300;
+    font-size: 150%;
+    padding-right: 80px;
+    padding-left: 80px;
+    text-align: justify;
 }
 .about-content h3{
-    font-size: 180%;
+    font-size: 150%;
     font-weight: 300;
     text-decoration: underline;
 }
+
 /* ---------contact us------------ */
 
 #contact-us{
     text-align: center;
-    margin-top: 60px;
+    margin-top: 200px;
 }
 #contact-us .heading-decoration{
     margin-bottom: 35px;
 }
+
 /* ------------footer------------- */
 
 footer{
