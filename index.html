@@ -5,48 +5,49 @@
         <title>HAUS</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">  
+        <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500;600;700&display=swap" rel="stylesheet">  
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="resources/css/style.css">
     </head>
-    <body>
+    <body onscroll="scrollNav()">
         <div id="logo">
             <img src="resources/css/images/logo.png" alt="logo">
             <h2>Home Academy US</h2>
         </div>
         <nav>
             <ul id="menu">
-                <li><a href="#home">Home</a></li>
+                <li><a href="#home" onclick="scrollNav()">Home</a></li>
                 <li>
                     <a onclick="sub()">Subjects</a>
                     <ul id="subjects">
                         <li>
                             <a onclick="maths()">Math</a>
                             <ul id="maths">
-                                <li><a href="#math1" onclick="firsthGradeNav()">grade-1</a></li>
-                                <li><a href="#math2" onclick="secondGradeNav()">grade-2</a></li>
-                                <li><a href="#math3" onclick="thirdGradeNav()">grade-3</a></li>
-                                <li><a href="#math4" onclick="fourthGradeNav()">grade-4</a></li>
-                                <li><a href="#math5" onclick="fifthGradeNav()">grade-5</a></li>
+                                <li><a href="#math1" onclick="firsthGradeNav()">Grade-1</a></li>
+                                <li><a href="#math2" onclick="secondGradeNav()">Grade-2</a></li>
+                                <li><a href="#math3" onclick="thirdGradeNav()">Grade-3</a></li>
+                                <li><a href="#math4" onclick="fourthGradeNav()">Grade-4</a></li>
+                                <li><a href="#math5" onclick="fifthGradeNav()">Grade-5</a></li>
                             </ul>
                         </li>
                         <li>
                             <a onclick="science()">Science</a>
                             <ul id="science">
-                                <li><a href="#science1" onclick="firsthGradeNav()">grade-1</a></li>
-                                <li><a href="#science2" onclick="secondGradeNav()">grade-2</a></li>
-                                <li><a href="#science3" onclick="thirdGradeNav()">grade-3</a></li>
-                                <li><a href="#science4" onclick="fourthGradeNav()">grade-4</a></li>
-                                <li><a href="#science5" onclick="fifthGradeNav()">grade-5</a></li>
+                                <li><a href="#science1" onclick="firsthGradeNav()">Grade-1</a></li>
+                                <li><a href="#science2" onclick="secondGradeNav()">Grade-2</a></li>
+                                <li><a href="#science3" onclick="thirdGradeNav()">Grade-3</a></li>
+                                <li><a href="#science4" onclick="fourthGradeNav()">Grade-4</a></li>
+                                <li><a href="#science5" onclick="fifthGradeNav()">Grade-5</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a onclick="sst()">SST</a>
+                            <a onclick="sst()">Social Studies</a>
                             <ul id="sst">
-                                <li><a href="#sst1" onclick="secondGradeNav()">grade-1</a></li>
-                                <li><a href="#sst2" onclick="firsthGradeNav()">grade-2</a></li>
-                                <li><a href="#sst3" onclick="thirdGradeNav()">grade-3</a></li>
-                                <li><a href="#sst4" onclick="fourthGradeNav()">grade-4</a></li>
-                                <li><a href="#sst5" onclick="fifthGradeNav()">grade-5</a></li>
+                                <li><a href="#sst1" onclick="secondGradeNav()">Grade-1</a></li>
+                                <li><a href="#sst2" onclick="firsthGradeNav()">Grade-2</a></li>
+                                <li><a href="#sst3" onclick="thirdGradeNav()">Grade-3</a></li>
+                                <li><a href="#sst4" onclick="fourthGradeNav()">Grade-4</a></li>
+                                <li><a href="#sst5" onclick="fifthGradeNav()">Grade-5</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -54,30 +55,27 @@
                 <li>
                     <a onclick="gradesNav()">Curriculum</a>
                     <ul id="gradesNav">
-                        <li><a href="#grade-1" onclick="firsthGradeNav()">grade-1</a></li>
-                        <li><a href="#grade-2" onclick="secondGradeNav()">grade-2</a></li>
-                        <li><a href="#grade-3" onclick="thirdGradeNav()">grade-3</a></li>
-                        <li><a href="#grade-4" onclick="fourthGradeNav()">grade-4</a></li>
-                        <li><a href="#grade-5" onclick="fifthGradeNav()">grade-5</a></li>
+                        <li><a href="#grade-1" onclick="firsthGradeNav()">Grade-1</a></li>
+                        <li><a href="#grade-2" onclick="secondGradeNav()">Grade-2</a></li>
+                        <li><a href="#grade-3" onclick="thirdGradeNav()">Grade-3</a></li>
+                        <li><a href="#grade-4" onclick="fourthGradeNav()">Grade-4</a></li>
+                        <li><a href="#grade-5" onclick="fifthGradeNav()">Grade-5</a></li>
                     </ul>
                 </li>
-                <li><a href="#about-us">About Us</a></li>
-                <li><a class="last-child" href="#contact-us">Contact Us</a></li>
+                <li><a href="#about-us" onclick="scrollNav()">About Us</a></li>
+                <li><a class="last-child" href="#contact-us" onclick="scrollNav()">Contact Us</a></li>
             </ul>
         </nav>
         <header id="home">
             <div id="main-content">
                 <h2 class="row">Welcome to</h2>
                 <h1 class="row">Home Academy US<img src="resources/css/images/united-states.svg" alt="us"></img></h1>
-                <h3 class="row">Maths | Science | Social Science</h3>
-                <h4 class="row">Grades 1 - 5</h4>
+                <h3 class="row">Maths | Science | Social Studies</h3>
             </div>
         </header>
         <div id="intro-container">
             <div id="intro" class="row">
-                <h2>H.A.U.S.</h2>
-                <span class="heading-decoration"></span>
-                <p>Congratulations! You found the perfect solution for providing world class education to your child within
+                <p><span id="intro-big-word">Congratulations!</span>You found the perfect solution for providing world class education to your child within
                     the comfort of your home. There is no need, henceforth, to worry about your child’s doubts in class that
                     go uncleared due to a number of reasons. Our curriculum covers every possible angle towards your
                     child’s education while boosting his/her motivation level and confidence.</p><br>
@@ -3088,7 +3086,7 @@
                     their children to develop outstanding after-school skills or to those children who need help with
                     improving grades.</p><br><br>
                 <h3 style="text-align: right;">Our Mission</h3><br>
-                <p style="text-align: right;">We aim to channelize the tremendous amount of technology at everyone’s disposal today to bring
+                <p>We aim to channelize the tremendous amount of technology at everyone’s disposal today to bring
                     knowledge from around the world to your doorstep, delivered by highly qualified and experienced
                     professionals.</p>
             </div>
@@ -3096,7 +3094,7 @@
         <section id="contact-us" class="row">
             <h2 class="heading">Contact Us</h2>
             <span class="heading-decoration"></span>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdZrYiYDraXEqG4ZH4DhslKPRTXze8QAmm2RnU5-QVonCK8cA/viewform?embedded=true" width="700" height="757" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdZrYiYDraXEqG4ZH4DhslKPRTXze8QAmm2RnU5-QVonCK8cA/viewform?embedded=true" width="700" height="837" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </section>    
         <footer>
             
