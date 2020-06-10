@@ -16,7 +16,7 @@
         </div>
         <nav>
             <ul id="menu">
-                <li><a href="#home" onclick="scrollNav()">Home</a></li>
+                <li><a href="#home" onclick="scrollNav(),gradeCollapse()">Home</a></li>
                 <li>
                     <a onclick="sub()">Subjects</a>
                     <ul id="subjects">
@@ -43,8 +43,8 @@
                         <li>
                             <a onclick="sst()">Social Studies</a>
                             <ul id="sst">
-                                <li><a href="#sst1" onclick="secondGradeNav()">Grade-1</a></li>
-                                <li><a href="#sst2" onclick="firsthGradeNav()">Grade-2</a></li>
+                                <li><a href="#sst1" onclick="firsthGradeNav()">Grade-1</a></li>
+                                <li><a href="#sst2" onclick="secondGradeNav()">Grade-2</a></li>
                                 <li><a href="#sst3" onclick="thirdGradeNav()">Grade-3</a></li>
                                 <li><a href="#sst4" onclick="fourthGradeNav()">Grade-4</a></li>
                                 <li><a href="#sst5" onclick="fifthGradeNav()">Grade-5</a></li>
@@ -55,25 +55,29 @@
                 <li>
                     <a onclick="gradesNav()">Curriculum</a>
                     <ul id="gradesNav">
-                        <li><a href="#grade-1" onclick="firsthGradeNav()">Grade-1</a></li>
-                        <li><a href="#grade-2" onclick="secondGradeNav()">Grade-2</a></li>
-                        <li><a href="#grade-3" onclick="thirdGradeNav()">Grade-3</a></li>
-                        <li><a href="#grade-4" onclick="fourthGradeNav()">Grade-4</a></li>
-                        <li><a href="#grade-5" onclick="fifthGradeNav()">Grade-5</a></li>
+                        <li><a href="#math1" onclick="firsthGradeNav()">Grade-1</a></li>
+                        <li><a href="#math2" onclick="secondGradeNav()">Grade-2</a></li>
+                        <li><a href="#math3" onclick="thirdGradeNav()">Grade-3</a></li>
+                        <li><a href="#math4" onclick="fourthGradeNav()">Grade-4</a></li>
+                        <li><a href="#math5" onclick="fifthGradeNav()">Grade-5</a></li>
                     </ul>
                 </li>
-                <li><a href="#about-us" onclick="scrollNav()">About Us</a></li>
-                <li><a class="last-child" href="#contact-us" onclick="scrollNav()">Contact Us</a></li>
+                <li><a href="#about-us" onclick="scrollNav(),gradeCollapse()">About Us</a></li>
+                <li><a class="last-child" href="#contact-us" onclick="scrollNav(),gradeCollapse()">Contact Us</a></li>
             </ul>
         </nav>
-        <header id="home">
+        <header id="home" onclick="clickNav(),gradeCollapse()">
             <div id="main-content">
                 <h2 class="row">Welcome to</h2>
                 <h1 class="row">Home Academy US<img src="resources/css/images/united-states.svg" alt="us"></img></h1>
                 <h3 class="row">Maths | Science | Social Studies</h3>
+                <a href="enroll.html">
+                    Enroll Now<br>
+                    <span>for your free class</span>
+                </a>
             </div>
         </header>
-        <div id="intro-container">
+        <div id="intro-container" onclick="clickNav(),gradeCollapse()">
             <div id="intro" class="row">
                 <p><span id="intro-big-word">Congratulations!</span>You found the perfect solution for providing world class education to your child within
                     the comfort of your home. There is no need, henceforth, to worry about your child’s doubts in class that
@@ -88,7 +92,7 @@
                     have in our homes. Let your child discover the real potential within.</p>
             </div>
         </div>
-        <section id="curriculum">
+        <section id="curriculum" onclick="clickNav()">
             <h2 class="heading">Curriculum</h2>
             <span class="heading-decoration"></span>
             <div id="curriculum-content" class="row">
@@ -3067,7 +3071,7 @@
                 </div>
             </div>
         </section>
-        <section id="about-us" >
+        <section id="about-us" onclick="clickNav(),gradeCollapse()">
             <h2 class="heading">About Us</h2>
             <span class="heading-decoration"></span>
             <div class="row about-content">
@@ -3091,13 +3095,66 @@
                     professionals.</p>
             </div>
         </section>
-        <section id="contact-us" class="row">
+        <section id="contact-us" class="row" onclick="clickNav()">
             <h2 class="heading">Contact Us</h2>
             <span class="heading-decoration"></span>
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdZrYiYDraXEqG4ZH4DhslKPRTXze8QAmm2RnU5-QVonCK8cA/viewform?embedded=true" width="700" height="837" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </section>    
         <footer>
-            
+            <div class="footer-contents">
+                <div class="footer-items row">
+                    <div onclick="gradeCollapse()">
+                        <h3>HāūS</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#curriculum">Curriculum</a></li>
+                            <li><a href="#about-us">About Us</a></li>
+                            <li><a href="#contact-us">Contact Us</a></li>
+                            <li><a href="enroll.html">Enroll Now</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Mathematics</h3>
+                        <ul>
+                            <li><a href="#math1" onclick="firsthGradeNav()">Grade 1</a></li>
+                            <li><a href="#math2" onclick="secondGradeNav()">Grade 2</a></li>
+                            <li><a href="#math3" onclick="thirdGradeNav()">Grade 3</a></li>
+                            <li><a href="#math4" onclick="fourthGradeNav()">Grade 4</a></li>
+                            <li><a href="#math5" onclick="fifthGradeNav()">Grade 5</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Science</h3>
+                        <ul>
+                            <li><a href="#science1" onclick="firsthGradeNav()">Grade 1</a></li>
+                            <li><a href="#science2" onclick="secondGradeNav()">Grade 2</a></li>
+                            <li><a href="#science3" onclick="thirdGradeNav()">Grade 3</a></li>
+                            <li><a href="#science4" onclick="fourthGradeNav()">Grade 4</a></li>
+                            <li><a href="#science5" onclick="fifthGradeNav()">Grade 5</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Social Studies</h3>
+                        <ul>
+                            <li><a href="#sst1" onclick="firsthGradeNav()">Grade 1</a></li>
+                            <li><a href="#sst2" onclick="secondGradeNav()">Grade 2</a></li>
+                            <li><a href="#sst3" onclick="thirdGradeNav()">Grade 3</a></li>
+                            <li><a href="#sst4" onclick="fourthGradeNav()">Grade 4</a></li>
+                            <li><a href="#sst5" onclick="fifthGradeNav()">Grade 5</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright" onclick="clickNav(),gradeCollapse()">
+                <div class="copyright-content row">
+                    <div>
+                        <p>2020. Home Academy US. All Rights Reserved.</p>
+                    </div>
+                    <div>
+                        <p class="design-by">Designed with <span>&#10084;</span> by Kovid Behl</p> 
+                    </div>      
+                </div>
+            </div>
         </footer>
         <script src="resources/js/index.js"></script>
     </body>
