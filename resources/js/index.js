@@ -3,6 +3,9 @@ let grade2 = document.getElementById("grade-2-content")
 let grade3 = document.getElementById("grade-3-content")
 let grade4 = document.getElementById("grade-4-content")
 let grade5 = document.getElementById("grade-5-content")
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}
 function firstGrade(){
     if (grade1.style.display === "block"){
         grade1.style.display = "none"
@@ -59,6 +62,8 @@ function fifthGrade(){
     }     
 }
 function firsthGradeNav(){
+    let gradeNav = document.getElementById("gradesNav")
+    let subjects = document.getElementById("subjects")
     if (grade1.style.display === "none"){
         grade1.style.display = "block"
         grade2.style.display = "none"
@@ -71,9 +76,13 @@ function firsthGradeNav(){
         grade3.style.display = "none"
         grade4.style.display = "none"
         grade5.style.display = "none"
+        gradeNav.style.display = "none"
+        subjects.style.display = "none"
     }   
 }
 function secondGradeNav(){
+    let gradeNav = document.getElementById("gradesNav")
+    let subjects = document.getElementById("subjects")
     if (grade2.style.display === "none"){
         grade2.style.display = "block"
         grade1.style.display = "none"
@@ -86,9 +95,13 @@ function secondGradeNav(){
         grade3.style.display = "none"
         grade4.style.display = "none"
         grade5.style.display = "none"
+        gradeNav.style.display = "none"
+        subjects.style.display = "none"
     }    
 }
 function thirdGradeNav(){
+    let gradeNav = document.getElementById("gradesNav")
+    let subjects = document.getElementById("subjects")
     if (grade3.style.display === "none"){
         grade3.style.display = "block"
         grade1.style.display = "none"
@@ -101,9 +114,13 @@ function thirdGradeNav(){
         grade2.style.display = "none"
         grade4.style.display = "none"
         grade5.style.display = "none"
+        gradeNav.style.display = "none"
+        subjects.style.display = "none"
     }    
 }
 function fourthGradeNav(){
+    let gradeNav = document.getElementById("gradesNav")
+    let subjects = document.getElementById("subjects")
     if (grade4.style.display === "none"){
         grade4.style.display = "block"
         grade1.style.display = "none"
@@ -116,9 +133,13 @@ function fourthGradeNav(){
         grade2.style.display = "none"
         grade3.style.display = "none"
         grade5.style.display = "none"
+        gradeNav.style.display = "none"
+        subjects.style.display = "none"
     }    
 }
 function fifthGradeNav(){
+    let gradeNav = document.getElementById("gradesNav")
+    let subjects = document.getElementById("subjects")
     if (grade5.style.display === "none"){
         grade5.style.display = "block"
         grade1.style.display = "none"
@@ -131,6 +152,8 @@ function fifthGradeNav(){
         grade2.style.display = "none"
         grade3.style.display = "none"
         grade4.style.display = "none"
+        gradeNav.style.display = "none"
+        subjects.style.display = "none"
     }    
 }
 function sub(){
@@ -194,7 +217,7 @@ function scrollNav(){
     }else{
         science.style.display = "none"
     }
-    if (sst.style.display === "block"){
+    if (sst.style.display === "block"){ 
         sst.style.display = "none"
     }else{
         sst.style.display = "none"
@@ -205,4 +228,21 @@ function scrollNav(){
         gradeNav.style.display = "none"
         subjects.style.display = "none"
     }
+}
+function clickNav(){   
+    let gradeNav = document.getElementById("gradesNav")
+    let subjects = document.getElementById("subjects")
+    if (gradeNav.style.display === "block"){
+        gradeNav.style.display = "none"
+    }else{
+        gradeNav.style.display = "none"
+        subjects.style.display = "none"
+    }
+}
+function gradeCollapse(){
+    grade1.style.display="none"
+    grade2.style.display="none"
+    grade3.style.display="none"
+    grade4.style.display="none"
+    grade5.style.display="none" 
 }
