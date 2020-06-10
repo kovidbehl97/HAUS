@@ -22,7 +22,7 @@ li{
     font-family: 'Lato',sans-serif;
     font-weight: 300;
     font-size: 250%;
-    margin-top: 100px;
+    margin-top: 60px;
     padding: 10px;
     text-align: center;
 }
@@ -107,7 +107,7 @@ nav > ul{
     display: none;
     position: absolute;
     margin-top: 14px;
-    width: 163px;
+    width: 184px;
 }
 #subjects li{
     padding: 10px 15px;
@@ -146,6 +146,9 @@ nav > ul{
 #sst{
     display: none;
 }
+#landa{
+    display: none;
+}
 #main-content{
     height: 100%;
     padding-bottom: 200px;
@@ -159,14 +162,14 @@ nav > ul{
     position: relative;
     top: 35%;
     font-weight: 400;
-    font-size:350%;
+    font-size:300%;
     margin-bottom: 20px;
     display: flex;
     align-items:center ;
     justify-content: center;
 }
 #main-content h1 img{
-    max-width: 50px;
+    max-width: 45px;
     margin-left: 20px;
 }
 #main-content h2{
@@ -174,7 +177,7 @@ nav > ul{
     position: relative;
     top: 35%;
     font-weight: 100;
-    font-size:250%;
+    font-size:230%;
 }
 #main-content h3,
 #main-content h4{
@@ -182,7 +185,7 @@ nav > ul{
     position: relative;
     top: 35%;
     font-weight: 500;
-    font-size: 130%;
+    font-size: 120%;
 }
 #main-content a{
     text-align: center;
@@ -192,7 +195,7 @@ nav > ul{
     color: white;
     font-family: 'Raleway',sans-serif;
     display: block;
-    margin-top: 50px;
+    margin-top: 110px;
     font-size: 180%;
     padding-bottom: 0;
     margin-bottom: 0;
@@ -223,7 +226,7 @@ nav > ul{
 /* -------------intro------------- */
 
 #intro{
-    padding: 100px 80px 60px 80px;
+    padding: 100px 80px 30px 80px;
     margin: 0 auto;
     font-family: 'Raleway',sans-serif;
     font-weight: 300;
@@ -259,7 +262,7 @@ nav > ul{
     border: 1px solid #00b14a;
 }
 .grade-content{
-    max-height: 75vh;
+    max-height: 70vh;
     overflow-y: scroll;
     display: none;
 }
@@ -287,13 +290,14 @@ nav > ul{
     font-size: 150%;
     font-weight: 300;
     text-decoration: underline;
+    margin-bottom: 10px;
 }
 
 /* ---------contact us------------ */
 
 #contact-us{
     text-align: center;
-    margin-top: 250px;
+    margin-top: 150px;
 }
 #contact-us .heading-decoration{
     margin-bottom: 35px;
@@ -321,9 +325,7 @@ footer a{
 .footer-items{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2.5em;
-    padding-bottom: 2.5em;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.253);
+    margin-bottom: 2.5em;   
     padding-right: 5%;
     padding-left: 5%;
 }
@@ -332,13 +334,13 @@ footer a{
     padding-right: 15%;
 }
 .footer-items h3{
-    padding-left: 5px;
-    width: 150px;
+    width: 100px;
     font-weight: 700;
     font-size: 1.1rem;
     padding-bottom: 0.5em;
     margin-bottom: 0.5em;
     border-bottom: 1px solid rgba(255, 255, 255, 0.253);
+    padding-left: 10px;
 }
 
 .footer-items ul{
