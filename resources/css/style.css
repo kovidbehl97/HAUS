@@ -369,3 +369,10 @@ footer a{
 .design-by span{
     color: rgb(128, 0, 0);
 }
+
+.copyright-content a{
+    color: rgb(55, 27, 155);
+}
+.copyright-content a:visited{
+    color: rgb(55, 27, 155);
+}
