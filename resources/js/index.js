@@ -179,26 +179,58 @@ function gradesNav(){
 
 function maths(){
     let maths = document.getElementById('maths')
+    let science = document.getElementById('science')
+    let sst = document.getElementById('sst')
+    let landa = document.getElementById('landa')
     if (maths.style.display === "block"){
         maths.style.display = "none"
     }else{
         maths.style.display = "block"
+        science.style.display = "none"
+        sst.style.display = "none"
+        landa.style.display = "none"
     }
 }
 function science(){
+    let maths = document.getElementById('maths')
     let science = document.getElementById('science')
+    let sst = document.getElementById('sst')
+    let landa = document.getElementById('landa')
     if (science.style.display === "block"){
         science.style.display = "none"
     }else{
         science.style.display = "block"
+        maths.style.display = "none"
+        sst.style.display = "none"
+        landa.style.display = "none"
     }
 }
 function sst(){
+    let maths = document.getElementById('maths')
+    let science = document.getElementById('science')
     let sst = document.getElementById('sst')
+    let landa = document.getElementById('landa')
     if (sst.style.display === "block"){
         sst.style.display = "none"
     }else{
         sst.style.display = "block"
+        maths.style.display = "none"
+        science.style.display = "none"
+        landa.style.display = "none"
+    }
+}
+function landa(){
+    let maths = document.getElementById('maths')
+    let science = document.getElementById('science')
+    let sst = document.getElementById('sst')
+    let landa = document.getElementById('landa')
+    if (landa.style.display === "block"){
+        landa.style.display = "none"
+    }else{
+        landa.style.display = "block"
+        maths.style.display = "none"
+        science.style.display = "none"
+        sst.style.display = "none"
     }
 }
 function scrollNav(){
