@@ -157,6 +157,10 @@ function fifthGradeNav(){
     }    
 }
 function sub(){
+    let maths = document.getElementById('maths')
+    let science = document.getElementById('science')
+    let sst = document.getElementById('sst')
+    let landa = document.getElementById('landa')
     let subjects = document.getElementById("subjects")
     let gradeNav = document.getElementById("gradesNav")
     if (subjects.style.display === "block"){
@@ -164,6 +168,10 @@ function sub(){
     }else{
         subjects.style.display = "block"
         gradeNav.style.display = "none"
+        maths.style.display = "none"
+        science.style.display = "none"
+        sst.style.display = "none"
+        landa.style.display = "none"
     }     
 }
 function gradesNav(){
@@ -237,6 +245,7 @@ function scrollNav(){
     let maths = document.getElementById('maths')
     let science = document.getElementById('science')
     let sst = document.getElementById('sst')
+    let landa = document.getElementById('landa')
     let gradeNav = document.getElementById("gradesNav")
     let subjects = document.getElementById("subjects")
     if (maths.style.display === "block"){
@@ -253,6 +262,11 @@ function scrollNav(){
         sst.style.display = "none"
     }else{
         sst.style.display = "none"
+    }
+    if (landa.style.display === "block"){ 
+        landa.style.display = "none"
+    }else{
+        landa.style.display = "none"
     }
     if (gradeNav.style.display === "block"){
         gradeNav.style.display = "none"
