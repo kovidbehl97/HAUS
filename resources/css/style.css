@@ -184,7 +184,42 @@ nav > ul{
     font-weight: 500;
     font-size: 130%;
 }
-
+#main-content a{
+    text-align: center;
+    position: relative;
+    top: 35%;
+    text-decoration: none;
+    color: white;
+    font-family: 'Raleway',sans-serif;
+    display: block;
+    margin-top: 50px;
+    font-size: 180%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-weight: 300;
+    border: 1px solid white;
+    margin-right: 85vh;
+    margin-left: 85vh;
+    padding-top: 10px;
+    border-radius: 4px;
+}
+#main-content a:hover{
+    background-color: #0505051e;
+    border: 1px solid #b3b3b3;
+    color: #dddddd;
+}
+#main-content span{
+    font-size: 70%;
+    padding-top: 0;
+    margin-top: 0;
+    position: relative;
+    bottom: 10px;
+    font-weight: 100;
+}
+#main-content span:hover{
+    border: none;
+    background-color: #ffffff00;
+}
 /* -------------intro------------- */
 
 #intro{
@@ -267,7 +302,68 @@ nav > ul{
 /* ------------footer------------- */
 
 footer{
-    height: 150px;
+    padding-top: 40px;
     background-color: #00251d;
     margin-top: 40px;
+    color: #ffffff;
+    line-height: 2em;
+    font-family: 'Lato',sans-serif;
+
+}
+footer li{
+    list-style-type: none;
+}
+footer a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Lato',sans-serif;
+}
+.footer-items{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5em;
+    padding-bottom: 2.5em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.253);
+    padding-right: 5%;
+    padding-left: 5%;
+}
+.footer-contents{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.footer-items h3{
+    padding-left: 5px;
+    width: 150px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.253);
+}
+
+.footer-items ul{
+    padding-left: 10px;
+    width: 150px;
+}
+.footer-items li{
+    font-weight: 300;
+    font-size: 0.95rem;
+}
+.copyright{
+    font-weight: 500;
+    background-image: linear-gradient(#e9e9e9,#e9e9e9);
+    color: #000;
+}
+.copyright-content{
+    display: flex;
+    justify-content: space-between ;
+    padding:1.2em;
+}
+.copyright-content p{
+    font-size: 0.9em;
+    color: rgb(88, 88, 88);
+}
+
+.design-by span{
+    color: rgb(128, 0, 0);
 }
