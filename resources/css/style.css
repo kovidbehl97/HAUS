@@ -262,7 +262,7 @@ nav > ul{
     background-color: white;
 }
 #showcase img{
-    max-width: 230px;
+    min-width: 230px;
     width: 230px;
 }
 #showcase h3{
