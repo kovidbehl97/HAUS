@@ -2,9 +2,10 @@ let grade1 = document.getElementById("grade-1-content")
 let grade2 = document.getElementById("grade-2-content")
 let grade3 = document.getElementById("grade-3-content")
 let grade4 = document.getElementById("grade-4-content")
-let grade5 = document.getElementById("grade-5-content")
+let home = document.getElementById("home")
 window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
+    window.location.reload()
+    window.scrollTo(0,0)
 }
 function firstGrade(){
     if (grade1.style.display === "block"){
@@ -156,6 +157,81 @@ function fifthGradeNav(){
         subjects.style.display = "none"
     }    
 }
+function firstGradeCur(){
+    if (grade1.style.display === "none"){
+        grade1.style.display = "block"
+        grade2.style.display = "none"
+        grade3.style.display = "none"
+        grade4.style.display = "none"
+        grade5.style.display = "none"
+    }else{
+        grade1.style.display = "block"
+        grade2.style.display = "none"
+        grade3.style.display = "none"
+        grade4.style.display = "none"
+        grade5.style.display = "none"
+    }  
+}
+function secondGradeCur(){
+    if (grade2.style.display === "none"){
+        grade2.style.display = "block"
+        grade1.style.display = "none"
+        grade3.style.display = "none"
+        grade4.style.display = "none"
+        grade5.style.display = "none"
+    }else{
+        grade2.style.display = "block"
+        grade1.style.display = "none"
+        grade3.style.display = "none"
+        grade4.style.display = "none"
+        grade5.style.display = "none"
+    }    
+}
+function thirdGradeCur(){
+    if (grade3.style.display === "none"){
+        grade3.style.display = "block"
+        grade1.style.display = "none"
+        grade2.style.display = "none"
+        grade4.style.display = "none"
+        grade5.style.display = "none"
+    }else{
+        grade3.style.display = "block"
+        grade1.style.display = "none"
+        grade2.style.display = "none"
+        grade4.style.display = "none"
+        grade5.style.display = "none"
+    }
+}
+function fourthGradeCur(){
+    if (grade4.style.display === "none"){
+        grade4.style.display = "block"
+        grade1.style.display = "none"
+        grade2.style.display = "none"
+        grade3.style.display = "none"
+        grade5.style.display = "none"
+    }else{
+        grade4.style.display = "block"
+        grade1.style.display = "none"
+        grade2.style.display = "none"
+        grade3.style.display = "none"
+        grade5.style.display = "none"
+    }
+}
+function fifthGradeCur(){
+    if (grade5.style.display === "none"){
+        grade5.style.display = "block"
+        grade1.style.display = "none"
+        grade2.style.display = "none"
+        grade3.style.display = "none"
+        grade4.style.display = "none"
+    }else{
+        grade5.style.display = "block"
+        grade1.style.display = "none"
+        grade2.style.display = "none"
+        grade3.style.display = "none"
+        grade4.style.display = "none"
+    }
+}
 function sub(){
     let maths = document.getElementById('maths')
     let science = document.getElementById('science')
@@ -280,9 +356,11 @@ function clickNav(){
     let subjects = document.getElementById("subjects")
     if (gradeNav.style.display === "block"){
         gradeNav.style.display = "none"
+        window.location.hash=""
     }else{
         gradeNav.style.display = "none"
         subjects.style.display = "none"
+        window.location.hash=""
     }
 }
 function gradeCollapse(){
