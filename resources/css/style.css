@@ -10,6 +10,8 @@
 
 html{
     scroll-padding-top: 70px;
+    scroll-behavior: smooth;
+      
 }
 .row{
     max-width: 1300px;
@@ -247,7 +249,7 @@ nav > ul{
 /* ------------showcase------------ */
 
 #showcase{
-    padding: 120px 80px 20px 80px;
+    padding: 80px 80px 20px 80px;
     margin-top: 80px;
     font-family: 'Raleway',sans-serif;
     font-weight: 300;
@@ -256,8 +258,7 @@ nav > ul{
     background-color: #fcfcfc;
 }
 #showcase p{
-    padding: 50px 50px 80px 50px;
-    margin-bottom: 100px;
+    padding: 50px 50px 60px 50px;
     background-color: white;
 }
 #showcase img{
@@ -275,6 +276,7 @@ nav > ul{
 }
 .showcase-box{
     box-shadow:0 0 30px 10px  #f7f7f7  ;
+    background-color: white;
 }
 #math-showcase-content,
 #science-showcase-content,
@@ -287,14 +289,48 @@ nav > ul{
 }
 #math-showcase-content h3,
 #sst-showcase-content h3{
-    margin: auto 20px auto 100px;
+    margin: auto 100px auto 150px;
 }
 #science-showcase-content h3,
 #landa-showcase-content h3{
-    margin: auto 90px auto 90px;
+    margin: auto 150px auto 180px;
 }
-    
-
+#math-showcase,
+#sst-showcase,
+#science-showcase,
+#landa-showcase{
+    text-align: center;
+    font-weight: 300;
+    font-size: 180%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}    
+#showcase .heading-decoration{
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+.showcase-links{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding-right: 160px;
+    padding-left: 160px;
+    padding-bottom: 80px;
+    margin-bottom: 100px;
+}
+.showcase-links a{
+    color: #00251d;
+    padding:10px 35px;
+    text-decoration: none;
+    font-family: 'Lato',sans-serif;
+    font-weight: 400;
+    border-radius: 5px;
+    font-size: 80%;
+    border: 1px solid #00251d;
+}
+.showcase-links a:hover{
+    background-color: #5757570c;
+}
 /* -------curriculum section------- */
 
 #curriculum{
