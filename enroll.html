@@ -5,9 +5,48 @@
         <title>Enroll Now</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <link rel="stylesheet" href="">
     </head>
     <body>
-        <script src=""></script>
+        <form name="form" onsubmit="return calculate()" action="payment.html" enctype="text/plain" method="POST">
+            <h1>Enroll for your FREE class</h1><br>
+            <label for="email">Email address</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="grade">Select your Grade</label><br>
+            <select id="grade" name="grade" required>
+                <option value="5" id="grade1"onclick="grade1Cal()">Grade 1</option>
+                <option value="15" id="grade2"onclick="grade2Cal()">Grade 2</option>
+                <option value="25" id="grade3"onclick="grade3Cal()">Grade 3</option>
+                <option value="35" id="grade4"onclick="grade4Cal()">Grade 4</option>
+                <option value="45" id="grade5"onclick="grade5Cal()">Grade 5</option>
+            </select><br>
+            <label for="subject">Select the Subjects you want classes for<abbr title="This field is mandatory" aria-label="required"></abbr></label><br>
+            <input type="radio" name="subject" id="check" style="width: 1px;"  required><br>
+            <input type="checkbox" name="math" id="math" value="5" onclick="checkSub(),mathCal()"/>
+            <label for="math">Math</label><br>
+            <input type="checkbox" name="science" id="science" value="5" onclick="checkSub(),scienceCal()"/>
+            <label for="science">Science</label><br>
+            <input type="checkbox" name="sst" id="sst" value="5" onclick="checkSub(),sstCal()"/>
+            <label for="sst">Social Studies</label><br>
+            <input type="checkbox" name="landa" id="landa" value="5" onclick="checkSub(),landaCal()"/>
+            <label for="landa">Language & Arts</label><br>
+            <label for="bundle">Select the bundle best suited for you</label><br>
+            <select id="bundle" name="bundle" required>
+                <option value="5" id="bundle1"onclick="bundle1Cal()">Mon-Thurs / 45 minutes each subject</option>
+                <option value="5" id="bundle2"onclick="bundle2Cal()">Mon-Fri / 45 minutes each subject</option>
+                <option value="5" id="bundle3"onclick="bundle3Cal()">Mon-Fri / 1 on 1 session / 1 hour each subject</option>
+            </select><br>
+            <h4>What is your preferred time range for classes? (e.g., 6 PM to 8 PM CST)</h4>
+            <h6>Indicate your Time Zone too</h6>
+            <label for="from">From</label>
+            <input type="time" id="from" required><br>
+            <label for="to">To</label>
+            <input type="time" id="to" required><br>
+            <label for="timezone">Mention your Time Zone, e.g., Eastern Time or Central Time or Mountain Time, etc.</label><br>
+            <textarea name="timezone" id="timezone" cols="20" rows="1" placeholder="your answer" required pattern="[Bb]anana|[Cc]herry"></textarea><br>
+            <input type="submit" name="submit" value="submit">
+        </form>
+        <script src="resources/js/enroll.js"></script>
     </body>
 </html>
