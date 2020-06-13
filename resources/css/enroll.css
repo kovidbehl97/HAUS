@@ -105,6 +105,7 @@ h1{
     margin-bottom: 20px;
     border-radius: 50px;
     border: 1px solid gray;
+    resize: none;
 }
 #submit{
     width: 100%;
@@ -115,4 +116,18 @@ h1{
     border: 1px solid gray;
     background-color: #00251d;
     color: white;
+}
+label{
+    font-family: serif;
+    font-size: 110%;
+    font-weight: bold;
+}
+.sub{
+    font-family: sans-serif;
+    font-weight: normal;
+    /* font-size: 100%; */
+}
+.time-label{
+    display: block;
+    text-align: center;
 }
