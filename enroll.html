@@ -5,14 +5,16 @@
         <title>Enroll Now</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="resources/css/enroll.css">
     </head>
     <body>
         <form name="form" onsubmit="return calculate()" action="payment.html" enctype="text/plain" method="POST">
-            <h1>Enroll for your FREE class</h1><br>
+            <h1 class="heading">Enroll for your FREE class</h1>
+            <div class="heading-decoration"></div><br>
             <label for="email">Email address</label><br>
-            <input type="email" id="email" name="email" required><br>
+            <input type="email" id="email" name="email" placeholder="enter your email" required><br>
             <label for="grade">Select your Grade</label><br>
             <select id="grade" name="grade" required>
                 <option value="5" id="grade1"onclick="grade1Cal()">Grade 1</option>
@@ -44,7 +46,7 @@
             <label for="to">To</label>
             <input type="time" id="to" required><br>
             <label for="timezone">Mention your Time Zone, e.g., Eastern Time or Central Time or Mountain Time, etc.</label><br>
-            <textarea name="timezone" id="timezone" cols="20" rows="1" placeholder="your answer" required></textarea><br>
+            <textarea name="timezone" id="timezone" cols="20" rows="1" placeholder="your answer" required pattern="[Bb]anana|[Cc]herry"></textarea><br>
             <input type="submit" name="submit" value="submit">
         </form>
         <script src="resources/js/enroll.js"></script>
