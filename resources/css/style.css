@@ -7,7 +7,9 @@
 }
 
 /* ------global styling------- */
-
+html{
+    scroll-padding-top: 110px;
+}
 .row{
     max-width: 1300px;
     margin: auto;
@@ -19,7 +21,7 @@ li{
     font-family: 'Lato',sans-serif;
     font-weight: 300;
     font-size: 250%;
-    margin-top: 60px;
+    margin-top: 40px;
     padding: 10px;
     text-align: center;
 }
@@ -259,11 +261,14 @@ nav > ul{
 #showcase img{
     min-width: 230px;
     width: 230px;
+    height: 250px;
+    object-fit: cover;
+    object-position: 0 0;
 }
 #showcase h3{
     color: white;
     font-weight: 100;
-    font-size: 200%;
+    font-size: 180%;
     text-align: left;
 }
 .showcase-space{
@@ -284,11 +289,14 @@ nav > ul{
 }
 #math-showcase-content h3,
 #sst-showcase-content h3{
-    margin: auto 100px auto 150px;
+    margin: auto 150px auto 180px;
 }
 #science-showcase-content h3,
 #landa-showcase-content h3{
-    margin: auto 150px auto 180px;
+    margin: auto 180px auto 180px;
+}
+#science-showcase-content h3{
+    margin-left: 230px;
 }
 #math-showcase,
 #sst-showcase,
@@ -329,25 +337,50 @@ nav > ul{
     border-bottom: 1px solid #ffffff;
     
 }
+.showcase-links-div{
+    width: 1px;
+    height: 100%;
+    background-color: #474646;
+}
 /* -------curriculum section------- */
 
 #curriculum{
     padding-bottom: 60px;
+   
+}
+.cur{
+    text-decoration: none;
+    color: black;
 }
 .grade{
-    border: 1px solid gray;
+    border: 1px solid #a5a5a5;
     margin: 10px 0;
     border-radius: 5px;
     font-family: 'Raleway',sans-serif;
-    font-weight: 300;
-    font-size: 150%;
-    padding: 10px;
+    font-weight: 400;
+    color: #575757;
+    font-size: 130%;
+    padding: 13px;
     text-align: center;
+    background-color: #ffffff;
+    
 }
 .grade:hover{
     cursor: pointer;
     color: #00b14a;
     border: 1px solid #00b14a;
+}
+.grade-selected{
+    border: 1px solid #a5a5a5;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 200;
+    color: #ffffff;
+    font-size: 140%;
+    padding: 10px;
+    text-align: center;
+    background-color: #00251d;
 }
 .grade-content{
     max-height: 70vh;
@@ -357,7 +390,8 @@ nav > ul{
 #curriculum-content{
     box-shadow: 0 0 50px 2px #f3f3f3;
     border-radius: 10px;
-    padding: 50px 10px; 
+    /* padding: 50px 10px;  */
+    padding: 50px 100px; 
 }
 
 /* ----------about us------------- */
@@ -365,15 +399,15 @@ nav > ul{
 #about-us{
     background-color: #fcfcfc;
     margin-top: 20px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;  
 }
 .about-content{
     background-color: white;
     padding-right: 80px;
     padding-left: 80px;
     box-shadow:0 0 30px 10px  #f7f7f7  ;
-    padding-top: 60px;
+    padding-top: 20px;
     padding-bottom: 80px;
 }
 .about-content p{
@@ -385,6 +419,9 @@ nav > ul{
 .about-content h2{
     margin-top: 0;
 }
+.about-content .heading-decoration{
+    margin-bottom: 70px;
+}
 .about-content h3{
     font-family: 'Raleway',sans-serif;
     font-size: 200%;
@@ -393,6 +430,7 @@ nav > ul{
     margin-bottom: 10px;
     text-underline-position: under;
 }
+
 
 /* ---------contact us------------ */
 
@@ -431,8 +469,8 @@ footer a{
     padding-left: 5%;
 }
 .footer-contents{
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 .footer-items h3{
     width: 100px;
