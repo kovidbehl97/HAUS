@@ -2,64 +2,173 @@ let grade1 = document.getElementById("grade-1-content")
 let grade2 = document.getElementById("grade-2-content")
 let grade3 = document.getElementById("grade-3-content")
 let grade4 = document.getElementById("grade-4-content")
+let grade5 = document.getElementById("grade-5-content")
+let gradeOne = document.getElementById("grade-1")
+let gradeTwo = document.getElementById("grade-2")
+let gradeThree = document.getElementById("grade-3")
+let gradeFour = document.getElementById("grade-4")
+let gradeFive = document.getElementById("grade-5")
 let home = document.getElementById("home")
-window.onbeforeunload = function () {
-    window.location.reload()
+window.onbeforeunload =function(){
     window.scrollTo(0,0)
+}
+window.onload = function(){
+    console.log("hello")
+    home.click()
 }
 function firstGrade(){
     if (grade1.style.display === "block"){
         grade1.style.display = "none"
+        gradeOne.classList.remove("grade-selected")
+        gradeTwo.classList.remove("grade-selected")
+        gradeThree.classList.remove("grade-selected")
+        gradeFour.classList.remove("grade-selected")
+        gradeFive.classList.remove("grade-selected")
+        gradeOne.classList.add("grade")
+        gradeTwo.classList.add("grade")
+        gradeThree.classList.add("grade")
+        gradeFour.classList.add("grade")
+        gradeFive.classList.add("grade")
     }else{
         grade1.style.display = "block"
         grade2.style.display = "none"
         grade3.style.display = "none"
         grade4.style.display = "none"
         grade5.style.display = "none"
+        gradeOne.classList.add("grade-selected")
+        gradeTwo.classList.remove("grade-selected")
+        gradeThree.classList.remove("grade-selected")
+        gradeFour.classList.remove("grade-selected")
+        gradeFive.classList.remove("grade-selected")
+        gradeOne.classList.remove("grade")
+        gradeTwo.classList.add("grade")
+        gradeThree.classList.add("grade")
+        gradeFour.classList.add("grade")
+        gradeFive.classList.add("grade")
     }     
 }
 function secondGrade(){
     if (grade2.style.display === "block"){
         grade2.style.display = "none"
+        gradeOne.classList.remove("grade-selected")
+        gradeTwo.classList.remove("grade-selected")
+        gradeThree.classList.remove("grade-selected")
+        gradeFour.classList.remove("grade-selected")
+        gradeFive.classList.remove("grade-selected")
+        gradeOne.classList.add("grade")
+        gradeTwo.classList.add("grade")
+        gradeThree.classList.add("grade")
+        gradeFour.classList.add("grade")
+        gradeFive.classList.add("grade")
     }else{
         grade2.style.display = "block"
         grade1.style.display = "none"
         grade3.style.display = "none"
         grade4.style.display = "none"
         grade5.style.display = "none"
+        gradeOne.classList.remove("grade-selected")
+        gradeTwo.classList.add("grade-selected")
+        gradeThree.classList.remove("grade-selected")
+        gradeFour.classList.remove("grade-selected")
+        gradeFive.classList.remove("grade-selected")
+        gradeOne.classList.add("grade")
+        gradeTwo.classList.remove("grade")
+        gradeThree.classList.add("grade")
+        gradeFour.classList.add("grade")
+        gradeFive.classList.add("grade")
     }     
 }
 function thirdGrade(){
     if (grade3.style.display === "block"){
         grade3.style.display = "none"
+        gradeOne.classList.remove("grade-selected")
+        gradeTwo.classList.remove("grade-selected")
+        gradeThree.classList.remove("grade-selected")
+        gradeFour.classList.remove("grade-selected")
+        gradeFive.classList.remove("grade-selected")
+        gradeOne.classList.add("grade")
+        gradeTwo.classList.add("grade")
+        gradeThree.classList.add("grade")
+        gradeFour.classList.add("grade")
+        gradeFive.classList.add("grade")
     }else{
         grade3.style.display = "block"
         grade1.style.display = "none"
         grade2.style.display = "none"
         grade4.style.display = "none"
         grade5.style.display = "none"
+        gradeOne.classList.remove("grade-selected")
+        gradeTwo.classList.remove("grade-selected")
+        gradeThree.classList.add("grade-selected")
+        gradeFour.classList.remove("grade-selected")
+        gradeFive.classList.remove("grade-selected")
+        gradeOne.classList.add("grade")
+        gradeTwo.classList.add("grade")
+        gradeThree.classList.remove("grade")
+        gradeFour.classList.add("grade")
+        gradeFive.classList.add("grade")
     }     
 }
 function fourthGrade(){
     if (grade4.style.display === "block"){
         grade4.style.display = "none"
+        gradeOne.classList.remove("grade-selected")
+        gradeTwo.classList.remove("grade-selected")
+        gradeThree.classList.remove("grade-selected")
+        gradeFour.classList.remove("grade-selected")
+        gradeFive.classList.remove("grade-selected")
+        gradeOne.classList.add("grade")
+        gradeTwo.classList.add("grade")
+        gradeThree.classList.add("grade")
+        gradeFour.classList.add("grade")
+        gradeFive.classList.add("grade")
     }else{
         grade4.style.display = "block"
         grade1.style.display = "none"
         grade2.style.display = "none"
         grade3.style.display = "none"
         grade5.style.display = "none"
+        gradeOne.classList.remove("grade-selected")
+        gradeTwo.classList.remove("grade-selected")
+        gradeThree.classList.remove("grade-selected")
+        gradeFour.classList.add("grade-selected")
+        gradeFive.classList.remove("grade-selected")
+        gradeOne.classList.add("grade")
+        gradeTwo.classList.add("grade")
+        gradeThree.classList.add("grade")
+        gradeFour.classList.remove("grade")
+        gradeFive.classList.add("grade")
     }     
 }
 function fifthGrade(){
     if (grade5.style.display === "block"){
         grade5.style.display = "none"
+        gradeOne.classList.remove("grade-selected")
+        gradeTwo.classList.remove("grade-selected")
+        gradeThree.classList.remove("grade-selected")
+        gradeFour.classList.remove("grade-selected")
+        gradeFive.classList.remove("grade-selected")
+        gradeOne.classList.add("grade")
+        gradeTwo.classList.add("grade")
+        gradeThree.classList.add("grade")
+        gradeFour.classList.add("grade")
+        gradeFive.classList.add("grade")
     }else{
         grade5.style.display = "block"
         grade1.style.display = "none"
         grade2.style.display = "none"
         grade3.style.display = "none"
         grade4.style.display = "none"
+        gradeOne.classList.remove("grade-selected")
+        gradeTwo.classList.remove("grade-selected")
+        gradeThree.classList.remove("grade-selected")
+        gradeFour.classList.remove("grade-selected")
+        gradeFive.classList.add("grade-selected")
+        gradeOne.classList.add("grade")
+        gradeTwo.classList.add("grade")
+        gradeThree.classList.add("grade")
+        gradeFour.classList.add("grade")
+        gradeFive.classList.remove("grade")
     }     
 }
 function firsthGradeNav(){
@@ -71,6 +180,16 @@ function firsthGradeNav(){
         grade3.style.display = "none"
         grade4.style.display = "none"
         grade5.style.display = "none"
+        gradeOne.classList.add("grade-selected")
+        gradeTwo.classList.remove("grade-selected")
+        gradeThree.classList.remove("grade-selected")
+        gradeFour.classList.remove("grade-selected")
+        gradeFive.classList.remove("grade-selected")
+        gradeOne.classList.remove("grade")
+        gradeTwo.classList.add("grade")
+        gradeThree.classList.add("grade")
+        gradeFour.classList.add("grade")
+        gradeFive.classList.add("grade")
     }else{
         grade1.style.display = "block"
         grade2.style.display = "none"
@@ -79,6 +198,16 @@ function firsthGradeNav(){
         grade5.style.display = "none"
         gradeNav.style.display = "none"
         subjects.style.display = "none"
+        gradeOne.classList.add("grade-selected")
+        gradeTwo.classList.remove("grade-selected")
+        gradeThree.classList.remove("grade-selected")
+        gradeFour.classList.remove("grade-selected")
+        gradeFive.classList.remove("grade-selected")
+        gradeOne.classList.remove("grade")
+        gradeTwo.classList.add("grade")
+        gradeThree.classList.add("grade")
+        gradeFour.classList.add("grade")
+        gradeFive.classList.add("grade")
     }   
 }
 function secondGradeNav(){
@@ -90,6 +219,16 @@ function secondGradeNav(){
         grade3.style.display = "none"
         grade4.style.display = "none"
         grade5.style.display = "none"
+        gradeOne.classList.remove("grade-selected")
+        gradeTwo.classList.add("grade-selected")
+        gradeThree.classList.remove("grade-selected")
+        gradeFour.classList.remove("grade-selected")
+        gradeFive.classList.remove("grade-selected")
+        gradeOne.classList.add("grade")
+        gradeTwo.classList.remove("grade")
+        gradeThree.classList.add("grade")
+        gradeFour.classList.add("grade")
+        gradeFive.classList.add("grade")
     }else{
         grade2.style.display = "block"
         grade1.style.display = "none"
@@ -98,6 +237,16 @@ function secondGradeNav(){
         grade5.style.display = "none"
         gradeNav.style.display = "none"
         subjects.style.display = "none"
+        gradeOne.classList.remove("grade-selected")
+        gradeTwo.classList.add("grade-selected")
+        gradeThree.classList.remove("grade-selected")
+        gradeFour.classList.remove("grade-selected")
+        gradeFive.classList.remove("grade-selected")
+        gradeOne.classList.add("grade")
+        gradeTwo.classList.remove("grade")
+        gradeThree.classList.add("grade")
+        gradeFour.classList.add("grade")
+        gradeFive.classList.add("grade")
     }    
 }
 function thirdGradeNav(){
@@ -109,6 +258,16 @@ function thirdGradeNav(){
         grade2.style.display = "none"
         grade4.style.display = "none"
         grade5.style.display = "none"
+        gradeOne.classList.remove("grade-selected")
+        gradeTwo.classList.remove("grade-selected")
+        gradeThree.classList.add("grade-selected")
+        gradeFour.classList.remove("grade-selected")
+        gradeFive.classList.remove("grade-selected")
+        gradeOne.classList.add("grade")
+        gradeTwo.classList.add("grade")
+        gradeThree.classList.remove("grade")
+        gradeFour.classList.add("grade")
+        gradeFive.classList.add("grade")
     }else{
         grade3.style.display = "block"
         grade1.style.display = "none"
@@ -117,6 +276,16 @@ function thirdGradeNav(){
         grade5.style.display = "none"
         gradeNav.style.display = "none"
         subjects.style.display = "none"
+        gradeOne.classList.remove("grade-selected")
+        gradeTwo.classList.remove("grade-selected")
+        gradeThree.classList.add("grade-selected")
+        gradeFour.classList.remove("grade-selected")
+        gradeFive.classList.remove("grade-selected")
+        gradeOne.classList.add("grade")
+        gradeTwo.classList.add("grade")
+        gradeThree.classList.remove("grade")
+        gradeFour.classList.add("grade")
+        gradeFive.classList.add("grade")
     }    
 }
 function fourthGradeNav(){
@@ -128,6 +297,16 @@ function fourthGradeNav(){
         grade2.style.display = "none"
         grade3.style.display = "none"
         grade5.style.display = "none"
+        gradeOne.classList.remove("grade-selected")
+        gradeTwo.classList.remove("grade-selected")
+        gradeThree.classList.remove("grade-selected")
+        gradeFour.classList.add("grade-selected")
+        gradeFive.classList.remove("grade-selected")
+        gradeOne.classList.add("grade")
+        gradeTwo.classList.add("grade")
+        gradeThree.classList.add("grade")
+        gradeFour.classList.remove("grade")
+        gradeFive.classList.add("grade")
     }else{
         grade4.style.display = "block"
         grade1.style.display = "none"
@@ -136,6 +315,16 @@ function fourthGradeNav(){
         grade5.style.display = "none"
         gradeNav.style.display = "none"
         subjects.style.display = "none"
+        gradeOne.classList.remove("grade-selected")
+        gradeTwo.classList.remove("grade-selected")
+        gradeThree.classList.remove("grade-selected")
+        gradeFour.classList.add("grade-selected")
+        gradeFive.classList.remove("grade-selected")
+        gradeOne.classList.add("grade")
+        gradeTwo.classList.add("grade")
+        gradeThree.classList.add("grade")
+        gradeFour.classList.remove("grade")
+        gradeFive.classList.add("grade")
     }    
 }
 function fifthGradeNav(){
@@ -147,6 +336,16 @@ function fifthGradeNav(){
         grade2.style.display = "none"
         grade3.style.display = "none"
         grade4.style.display = "none"
+        gradeOne.classList.remove("grade-selected")
+        gradeTwo.classList.remove("grade-selected")
+        gradeThree.classList.remove("grade-selected")
+        gradeFour.classList.remove("grade-selected")
+        gradeFive.classList.add("grade-selected")
+        gradeOne.classList.add("grade")
+        gradeTwo.classList.add("grade")
+        gradeThree.classList.add("grade")
+        gradeFour.classList.add("grade")
+        gradeFive.classList.remove("grade")
     }else{
         grade5.style.display = "block"
         grade1.style.display = "none"
@@ -155,82 +354,17 @@ function fifthGradeNav(){
         grade4.style.display = "none"
         gradeNav.style.display = "none"
         subjects.style.display = "none"
+        gradeOne.classList.remove("grade-selected")
+        gradeTwo.classList.remove("grade-selected")
+        gradeThree.classList.remove("grade-selected")
+        gradeFour.classList.remove("grade-selected")
+        gradeFive.classList.add("grade-selected")
+        gradeOne.classList.add("grade")
+        gradeTwo.classList.add("grade")
+        gradeThree.classList.add("grade")
+        gradeFour.classList.add("grade")
+        gradeFive.classList.remove("grade")
     }    
-}
-function firstGradeCur(){
-    if (grade1.style.display === "none"){
-        grade1.style.display = "block"
-        grade2.style.display = "none"
-        grade3.style.display = "none"
-        grade4.style.display = "none"
-        grade5.style.display = "none"
-    }else{
-        grade1.style.display = "block"
-        grade2.style.display = "none"
-        grade3.style.display = "none"
-        grade4.style.display = "none"
-        grade5.style.display = "none"
-    }  
-}
-function secondGradeCur(){
-    if (grade2.style.display === "none"){
-        grade2.style.display = "block"
-        grade1.style.display = "none"
-        grade3.style.display = "none"
-        grade4.style.display = "none"
-        grade5.style.display = "none"
-    }else{
-        grade2.style.display = "block"
-        grade1.style.display = "none"
-        grade3.style.display = "none"
-        grade4.style.display = "none"
-        grade5.style.display = "none"
-    }    
-}
-function thirdGradeCur(){
-    if (grade3.style.display === "none"){
-        grade3.style.display = "block"
-        grade1.style.display = "none"
-        grade2.style.display = "none"
-        grade4.style.display = "none"
-        grade5.style.display = "none"
-    }else{
-        grade3.style.display = "block"
-        grade1.style.display = "none"
-        grade2.style.display = "none"
-        grade4.style.display = "none"
-        grade5.style.display = "none"
-    }
-}
-function fourthGradeCur(){
-    if (grade4.style.display === "none"){
-        grade4.style.display = "block"
-        grade1.style.display = "none"
-        grade2.style.display = "none"
-        grade3.style.display = "none"
-        grade5.style.display = "none"
-    }else{
-        grade4.style.display = "block"
-        grade1.style.display = "none"
-        grade2.style.display = "none"
-        grade3.style.display = "none"
-        grade5.style.display = "none"
-    }
-}
-function fifthGradeCur(){
-    if (grade5.style.display === "none"){
-        grade5.style.display = "block"
-        grade1.style.display = "none"
-        grade2.style.display = "none"
-        grade3.style.display = "none"
-        grade4.style.display = "none"
-    }else{
-        grade5.style.display = "block"
-        grade1.style.display = "none"
-        grade2.style.display = "none"
-        grade3.style.display = "none"
-        grade4.style.display = "none"
-    }
 }
 function sub(){
     let maths = document.getElementById('maths')
@@ -368,5 +502,5 @@ function gradeCollapse(){
     grade2.style.display="none"
     grade3.style.display="none"
     grade4.style.display="none"
-    grade5.style.display="none" 
+    grade5.style.display="none"     
 }
