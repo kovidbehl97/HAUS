@@ -26,13 +26,13 @@
             <label for="subject">Select the Subjects you want classes for<abbr title="This field is mandatory" aria-label="required"></abbr></label><br>
             <input type="radio" name="subject" id="check" style="width: 1px;"  required><br>
             <input type="checkbox" name="math" id="math" value="5" onclick="checkSub(),mathCal()"/>
-            <label for="math">Math</label><br>
+            <label for="math" class="sub">Math</label><br>
             <input type="checkbox" name="science" id="science" value="5" onclick="checkSub(),scienceCal()"/>
-            <label for="science">Science</label><br>
+            <label for="science" class="sub">Science</label><br>
             <input type="checkbox" name="sst" id="sst" value="5" onclick="checkSub(),sstCal()"/>
-            <label for="sst">Social Studies</label><br>
+            <label for="sst" class="sub">Social Studies</label><br>
             <input type="checkbox" name="landa" id="landa" value="5" onclick="checkSub(),landaCal()"/>
-            <label for="landa">Language & Arts</label><br>
+            <label for="landa" class="sub">Language & Arts</label><br>
             <label for="bundle">Select the bundle best suited for you</label><br>
             <select id="bundle" name="bundle" required>
                 <option value="5" id="bundle1"onclick="bundle1Cal()">Mon-Thurs / 45 minutes each subject</option>
@@ -40,10 +40,9 @@
                 <option value="5" id="bundle3"onclick="bundle3Cal()">Mon-Fri / 1 on 1 session / 1 hour each subject</option>
             </select><br>
             <h4>What is your preferred time range for classes? (e.g., 6 PM to 8 PM CST)</h4>
-            <h6>Indicate your Time Zone too</h6>
-            <label for="from">From</label>
+            <label for="from" class="time-label">From</label>
             <input type="time" id="from" required><br>
-            <label for="to">To</label>
+            <label for="to" class="time-label">To</label>
             <input type="time" id="to" required><br>
             <label for="timezone">Mention your Time Zone, e.g., Eastern Time or Central Time or Mountain Time, etc.</label><br>
             <textarea name="timezone" id="timezone" cols="20" rows="1" placeholder="your answer" required></textarea><br>
