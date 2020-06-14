@@ -1,0 +1,388 @@
+/*big tablets to 1400px(width smaller than 1400px)*/
+@media only screen and (max-width: 1400px){
+    #math-showcase-content h3,
+    #sst-showcase-content h3{
+    margin: auto 130px auto 150px;
+    }
+}
+@media only screen and (max-width: 1350px){
+    #math-showcase-content h3,
+    #sst-showcase-content h3{
+    margin: auto 110px auto 130px;
+    }
+    #copyright-line{
+        margin-left: 15vh;
+    }
+    .design-by{
+        margin-right: 15vh;
+    }
+}
+@media only screen and (max-width: 1312px){
+    #math-showcase-content h3,
+    #sst-showcase-content h3{
+    margin: auto 80px auto 110px;
+    }
+}
+@media only screen and (max-width: 1272px){
+    #landa-showcase-content h3{
+        margin: auto 130px auto 130px;
+    }
+    #math-showcase-content h3,
+    #sst-showcase-content h3{
+    margin: auto 80px auto 90px;
+    }
+    .showcase-links{
+        padding: 10px 80px;
+    }
+    
+    .showcase-links-div{
+        height: 30px;
+        margin-top: 5px;
+    }
+}
+@media only screen and (max-width: 1240px){
+    #math-showcase-content h3,
+    #sst-showcase-content h3{
+    margin: auto 40px auto 80px;
+    }
+    #science-showcase-content h3,
+    #landa-showcase-content h3{
+        margin: auto 150px auto 150px;
+    }
+    #science-showcase-content h3{
+        margin-left: 180px;
+    }
+    #copyright-content{
+        margin: auto 40vh;
+    }
+}
+@media only screen and (max-width: 1200px){
+    #math-showcase-content h3,
+    #sst-showcase-content h3{
+    margin: auto 40px auto 50px;
+    }
+    #science-showcase-content h3,
+    #landa-showcase-content h3{
+        margin: auto 120px auto 120px;
+    }
+    #science-showcase-content h3{
+        margin-left: 180px;
+    }
+}
+@media only screen and (max-width: 1160px){
+    #math-showcase-content h3,
+    #sst-showcase-content h3{
+    margin: auto 30px auto 40px;
+    }
+    #science-showcase-content h3,
+    #landa-showcase-content h3{
+        margin: auto 110px auto 110px;
+    }
+    #science-showcase-content h3{
+        margin-left: 180px;
+    }
+    #curriculum-content{
+        padding: 50px 70px;
+    }
+}
+
+/*small tablets to 1141px(width smaller than 1141px)*/
+@media only screen and (max-width: 1141px){
+    #math-showcase-content h3,
+    #sst-showcase-content h3{
+    margin: auto 30px auto 78px;
+    }
+    /* #science-showcase-content h3,
+    #landa-showcase-content h3{
+        margin: auto 110px auto 110px;
+    }
+    #science-showcase-content h3{
+        margin-left: 180px;
+    }
+    #curriculum-content{
+        padding: 50px 70px;
+    } */
+    #showcase h3{
+        font-size: 160%;
+    }
+    #showcase img{
+        min-width: 200px;
+        width: 200px;
+        height: 230px;
+        object-fit: cover;
+        object-position: 0 0;
+    }
+    #math-showcase,
+    #sst-showcase,
+    #science-showcase,
+    #landa-showcase{
+        text-align: center;
+        font-weight: 300;
+        font-size: 160%;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }    
+}
+@media only screen and (max-width: 1096px){
+    #math-showcase-content h3,
+    #sst-showcase-content h3{
+    margin: auto 30px auto 60px;
+    }
+}
+@media only screen and (max-width: 1096px){
+    #math-showcase-content h3,
+    #sst-showcase-content h3{
+    margin: auto 30px auto 50px;
+    }
+}
+@media only screen and (max-width: 1054px){
+    #math-showcase-content h3,
+    #sst-showcase-content h3{
+    margin: auto 30px auto 50px;
+    }
+    #science-showcase-content h3,
+    #landa-showcase-content h3{
+        margin: auto 100px auto 100px;
+    }
+    #science-showcase-content h3{
+        margin-left: 160px;
+    }
+    #showcase h3{
+        font-size: 150%;
+    }
+}
+@media only screen and (max-width: 1096px){
+    #math-showcase-content h3,
+    #sst-showcase-content h3{
+    margin: auto 20px auto 30px;
+    }
+    #science-showcase-content h3,
+    #landa-showcase-content h3{
+        margin: auto 90px auto 90px;
+    }
+    #science-showcase-content h3{
+        margin-left: 150px;
+    }
+}
+@media only screen and (max-width: 980px){
+    nav a{
+        font-size: 100%;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    #main-content h1{
+        font-size: 250%;
+    }
+    #main-content h2{
+        font-size: 220%;
+    }
+    #main-content img{
+        max-width: 35px;
+        padding-top: 5px;
+    }
+    #main-content h3,
+    #main-content h4{
+        font-size: 110%;
+    }
+    #main-content a{
+        font-size: 160%;
+    }
+    #main-content span{
+        font-size: 65%;
+    }
+    #math-showcase-content h3,
+    #sst-showcase-content h3{
+    margin: auto 20px auto 50px;
+    }
+    #science-showcase-content h3,
+    #landa-showcase-content h3{
+        margin: auto 90px auto 90px;
+    }
+    #science-showcase-content h3{
+        margin-left: 150px;
+    }
+    #showcase h3{
+        font-size: 130%;
+    }
+}
+@media only screen and (max-width: 906px){
+    #math-showcase-content h3,
+    #sst-showcase-content h3{
+    margin: auto 15px auto 20px;
+    }
+    #science-showcase-content h3,
+    #landa-showcase-content h3{
+        margin: auto 60px auto 60px;
+    }
+    #science-showcase-content h3{
+        margin-left: 120px;
+    }
+}
+@media only screen and (max-width: 850px){
+    #intro{
+        font-size: 120%;
+    }
+    #showcase{
+        font-size: 120%;
+        padding-bottom: 1px;
+    }
+
+    #math-showcase-content h3,
+    #sst-showcase-content h3{
+    margin: auto 20px auto 40px;
+    }
+    #science-showcase-content h3,
+    #landa-showcase-content h3{
+        margin: auto 70px auto 70px;
+    }
+    #science-showcase-content h3{
+        margin-left: 120px;
+    }
+    #math-showcase,
+    #sst-showcase,
+    #science-showcase,
+    #landa-showcase{
+        text-align: center;
+        font-weight: 300;
+        font-size: 140%;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    #showcase h3{
+        font-size: 120%;
+    }
+    #showcase img{
+        min-width: 150px;
+        width: 150px;
+        height: 190px;
+        object-fit: cover;
+        object-position: 0 0;
+    }
+    .showcase-links{
+        margin-bottom: 50px;
+    }
+    #curriculum-content{
+        padding: 50px 50px;
+    }
+    #curriculum{
+        padding-bottom: 0;
+    }
+    .heading{
+        font-size: 210%;
+    }
+    .about-content p{
+        font-size: 120%;
+    }
+    .about-content h3{
+        font-size: 160%;
+    }
+}
+
+/*phones (width smaller than 800px)*/
+
+@media only screen and (max-width: 660px){
+    #logo img{
+        width: 60px;
+    }
+    #logo h2{
+        margin-right: 15vh;
+        font-size: 180%;
+    }
+    nav a{
+        font-size: 80%;
+        padding:0;
+        border: none;
+    }
+    .last-child{
+        padding:0;
+        border: none;
+    }
+    nav li{
+        padding:15px 0px;
+    }
+    #main-content h1{
+        font-size: 200%;
+    }
+    #main-content h2{
+        font-size: 180%;
+    }
+    #main-content img{
+        width: 35px;
+        padding-bottom: 5px;
+        position: relative;
+        right: 10px;
+    }
+    #main-content h3,
+    #main-content h4{
+        font-size: 90%;
+    }
+    #main-content a{
+        font-size: 160%;
+    }
+    #main-content span{
+        font-size: 65%;
+    }
+    iframe{
+        width: 130vh;
+    }
+    #math-showcase-content h3,
+    #sst-showcase-content h3{
+    margin: auto 20px auto 40px;
+    }
+    #science-showcase-content h3,
+    #landa-showcase-content h3{
+        margin: auto 60px auto 60px;
+    }
+    #science-showcase-content h3{
+        margin-left: 60px;
+    }
+    .copyright-content{
+        display: block;
+    }
+    .design-by{
+        text-align: center;
+        margin-right: 0;
+    }
+    #copyright-line{
+        text-align: center;
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width: 660px){
+    #logo img{
+        margin-left: 10vh;
+    }
+    #intro{
+        font-size: 100;
+    }
+    #showcase{
+        padding:10px 20px;
+    }
+    iframe{
+        width: 110vh;
+    }
+}
+@media only screen and (max-width: 501px){
+    .showcase-links{
+        padding:15px 25px;
+    }
+    #curriculum-content{
+        padding: 50px 20px
+    }
+    iframe{
+        width: 480px;
+    }
+    .about-content{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    #showcase p{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    #intro {
+        padding-right: 50px;
+        padding-left: 50px;
+        text-align: justify;
+    }
+}
