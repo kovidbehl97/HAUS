@@ -194,16 +194,15 @@ nav > ul{
     color: white;
     font-family: 'Raleway',sans-serif;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
     margin-top: 110px;
     font-size: 180%;
     padding-bottom: 0;
     margin-bottom: 0;
     font-weight: 300;
     border: 1px solid white;
-    margin-right: 85vh;
-    margin-left: 85vh;
     padding-top: 10px;
     border-radius: 4px;
 }
