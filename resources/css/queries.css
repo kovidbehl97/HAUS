@@ -363,6 +363,9 @@
     }
 }
 @media only screen and (max-width: 501px){
+    #logo h2 {
+        margin-right: 5vh;
+    }
     .showcase-links{
         padding:15px 25px;
     }
