@@ -18,12 +18,12 @@
         </div>
         <nav>
             <ul id="menu">
-                <li><a href="#logo" id="home" onclick="scrollNav(),gradeCollapse()">Home</a></li>
+                <li><a href="#logo" id="home" onclick="scrollNav(),gradeCollapse(),clickScrollNav()">Home</a></li>
                 <li>
                     <a onclick="sub()">Subjects</a>
                     <ul id="subjects">
                         <li>
-                            <a href="#math-showcase">Math</a>
+                            <a onclick="clickScrollNav()" href="#math-showcase">Math</a>
                             <!-- <ul id="maths">
                                 <li><a href="#math1" onclick="firsthGradeNav()">Grade-1</a></li>
                                 <li><a href="#math2" onclick="secondGradeNav()">Grade-2</a></li>
@@ -33,7 +33,7 @@
                             </ul> -->
                         </li>
                         <li>
-                            <a href="#science-showcase">Science</a>
+                            <a onclick="clickScrollNav()" href="#science-showcase">Science</a>
                             <!-- <ul id="science">
                                 <li><a href="#science1" onclick="firsthGradeNav()">Grade-1</a></li>
                                 <li><a href="#science2" onclick="secondGradeNav()">Grade-2</a></li>
@@ -43,7 +43,7 @@
                             </ul> -->
                         </li>
                         <li>
-                            <a href="#sst-showcase">Social Studies</a>
+                            <a onclick="clickScrollNav()" href="#sst-showcase">Social Studies</a>
                             <!-- <ul id="sst">
                                 <li><a href="#sst1" onclick="firsthGradeNav()">Grade-1</a></li>
                                 <li><a href="#sst2" onclick="secondGradeNav()">Grade-2</a></li>
@@ -53,7 +53,7 @@
                             </ul> -->
                         </li>
                         <li>
-                            <a href="#landa-showcase">Language & Arts</a>
+                            <a onclick="clickScrollNav()" href="#landa-showcase">Language & Arts</a>
                             <!-- <ul id="landa">
                                 <li><a href="#landa1" onclick="firsthGradeNav()">Grade-1</a></li>
                                 <li><a href="#landa2" onclick="secondGradeNav()">Grade-2</a></li>
@@ -67,15 +67,15 @@
                 <li>
                     <a onclick="gradesNav()">Curriculum</a>
                     <ul id="gradesNav">
-                        <li><a href="#math1" onclick="firsthGradeNav()">Grade-1</a></li>
-                        <li><a href="#math2" onclick="secondGradeNav()">Grade-2</a></li>
-                        <li><a href="#math3" onclick="thirdGradeNav()">Grade-3</a></li>
-                        <li><a href="#math4" onclick="fourthGradeNav()">Grade-4</a></li>
-                        <li><a href="#math5" onclick="fifthGradeNav()">Grade-5</a></li>
+                        <li><a href="#math1" onclick="firsthGradeNav(),clickScrollNav()">Grade-1</a></li>
+                        <li><a href="#math2" onclick="secondGradeNav(),clickScrollNav()">Grade-2</a></li>
+                        <li><a href="#math3" onclick="thirdGradeNav(),clickScrollNav()">Grade-3</a></li>
+                        <li><a href="#math4" onclick="fourthGradeNav(),clickScrollNav()">Grade-4</a></li>
+                        <li><a href="#math5" onclick="fifthGradeNav(),clickScrollNav()">Grade-5</a></li>
                     </ul>
                 </li>
-                <li><a href="#about" onclick="scrollNav(),gradeCollapse()">About Us</a></li>
-                <li><a class="last-child" href="#contact" onclick="scrollNav(),gradeCollapse()">Contact Us</a></li>
+                <li><a href="#about" onclick="scrollNav(),gradeCollapse(),clickScrollNav()">About Us</a></li>
+                <li><a class="last-child" href="#contact" onclick="scrollNav(),gradeCollapse(),clickScrollNav()">Contact Us</a></li>
             </ul>
         </nav>
         <header id="home" onclick="clickNav(),gradeCollapse(),clickScrollNav()">
