@@ -9,6 +9,7 @@ let gradeThree = document.getElementById("grade-3")
 let gradeFour = document.getElementById("grade-4")
 let gradeFive = document.getElementById("grade-5")
 let home = document.getElementById("home")
+let menu = document.getElementById("menu")
 window.onbeforeunload =function(){
     window.scrollTo(0,0)
 }
@@ -16,6 +17,7 @@ window.onload = function(){
     console.log("hello")
     home.click()
 }
+
 function firstGrade(){
     if (grade1.style.display === "block"){
         grade1.style.display = "none"
@@ -367,10 +369,10 @@ function fifthGradeNav(){
     }    
 }
 function sub(){
-    let maths = document.getElementById('maths')
-    let science = document.getElementById('science')
-    let sst = document.getElementById('sst')
-    let landa = document.getElementById('landa')
+    // let maths = document.getElementById('maths')
+    // let science = document.getElementById('science')
+    // let sst = document.getElementById('sst')
+    // let landa = document.getElementById('landa')
     let subjects = document.getElementById("subjects")
     let gradeNav = document.getElementById("gradesNav")
     if (subjects.style.display === "block"){
@@ -378,10 +380,10 @@ function sub(){
     }else{
         subjects.style.display = "block"
         gradeNav.style.display = "none"
-        maths.style.display = "none"
-        science.style.display = "none"
-        sst.style.display = "none"
-        landa.style.display = "none"
+        // maths.style.display = "none"
+        // science.style.display = "none"
+        // sst.style.display = "none"
+        // landa.style.display = "none"
     }     
 }
 function gradesNav(){
@@ -395,89 +397,89 @@ function gradesNav(){
     }     
 }
 
-function maths(){
-    let maths = document.getElementById('maths')
-    let science = document.getElementById('science')
-    let sst = document.getElementById('sst')
-    let landa = document.getElementById('landa')
-    if (maths.style.display === "block"){
-        maths.style.display = "none"
-    }else{
-        maths.style.display = "block"
-        science.style.display = "none"
-        sst.style.display = "none"
-        landa.style.display = "none"
-    }
-}
-function science(){
-    let maths = document.getElementById('maths')
-    let science = document.getElementById('science')
-    let sst = document.getElementById('sst')
-    let landa = document.getElementById('landa')
-    if (science.style.display === "block"){
-        science.style.display = "none"
-    }else{
-        science.style.display = "block"
-        maths.style.display = "none"
-        sst.style.display = "none"
-        landa.style.display = "none"
-    }
-}
-function sst(){
-    let maths = document.getElementById('maths')
-    let science = document.getElementById('science')
-    let sst = document.getElementById('sst')
-    let landa = document.getElementById('landa')
-    if (sst.style.display === "block"){
-        sst.style.display = "none"
-    }else{
-        sst.style.display = "block"
-        maths.style.display = "none"
-        science.style.display = "none"
-        landa.style.display = "none"
-    }
-}
-function landa(){
-    let maths = document.getElementById('maths')
-    let science = document.getElementById('science')
-    let sst = document.getElementById('sst')
-    let landa = document.getElementById('landa')
-    if (landa.style.display === "block"){
-        landa.style.display = "none"
-    }else{
-        landa.style.display = "block"
-        maths.style.display = "none"
-        science.style.display = "none"
-        sst.style.display = "none"
-    }
-}
+// function maths(){
+//     let maths = document.getElementById('maths')
+//     let science = document.getElementById('science')
+//     let sst = document.getElementById('sst')
+//     let landa = document.getElementById('landa')
+//     if (maths.style.display === "block"){
+//         maths.style.display = "none"
+//     }else{
+//         maths.style.display = "block"
+//         science.style.display = "none"
+//         sst.style.display = "none"
+//         landa.style.display = "none"
+//     }
+// }
+// function science(){
+//     let maths = document.getElementById('maths')
+//     let science = document.getElementById('science')
+//     let sst = document.getElementById('sst')
+//     let landa = document.getElementById('landa')
+//     if (science.style.display === "block"){
+//         science.style.display = "none"
+//     }else{
+//         science.style.display = "block"
+//         maths.style.display = "none"
+//         sst.style.display = "none"
+//         landa.style.display = "none"
+//     }
+// }
+// function sst(){
+//     let maths = document.getElementById('maths')
+//     let science = document.getElementById('science')
+//     let sst = document.getElementById('sst')
+//     let landa = document.getElementById('landa')
+//     if (sst.style.display === "block"){
+//         sst.style.display = "none"
+//     }else{
+//         sst.style.display = "block"
+//         maths.style.display = "none"
+//         science.style.display = "none"
+//         landa.style.display = "none"
+//     }
+// }
+// function landa(){
+//     let maths = document.getElementById('maths')
+//     let science = document.getElementById('science')
+//     let sst = document.getElementById('sst')
+//     let landa = document.getElementById('landa')
+//     if (landa.style.display === "block"){
+//         landa.style.display = "none"
+//     }else{
+//         landa.style.display = "block"
+//         maths.style.display = "none"
+//         science.style.display = "none"
+//         sst.style.display = "none"
+//     }
+// }
 function scrollNav(){
-    let maths = document.getElementById('maths')
-    let science = document.getElementById('science')
-    let sst = document.getElementById('sst')
-    let landa = document.getElementById('landa')
+    // let maths = document.getElementById('maths')
+    // let science = document.getElementById('science')
+    // let sst = document.getElementById('sst')
+    // let landa = document.getElementById('landa')
     let gradeNav = document.getElementById("gradesNav")
     let subjects = document.getElementById("subjects")
-    if (maths.style.display === "block"){
-        maths.style.display = "none"
-    }else{
-        maths.style.display = "none"
-    }
-    if (science.style.display === "block"){
-        science.style.display = "none"
-    }else{
-        science.style.display = "none"
-    }
-    if (sst.style.display === "block"){ 
-        sst.style.display = "none"
-    }else{
-        sst.style.display = "none"
-    }
-    if (landa.style.display === "block"){ 
-        landa.style.display = "none"
-    }else{
-        landa.style.display = "none"
-    }
+    // if (maths.style.display === "block"){
+    //     maths.style.display = "none"
+    // }else{
+    //     maths.style.display = "none"
+    // }
+    // if (science.style.display === "block"){
+    //     science.style.display = "none"
+    // }else{
+    //     science.style.display = "none"
+    // }
+    // if (sst.style.display === "block"){ 
+    //     sst.style.display = "none"
+    // }else{
+    //     sst.style.display = "none"
+    // }
+    // if (landa.style.display === "block"){ 
+    //     landa.style.display = "none"
+    // }else{
+    //     landa.style.display = "none"
+    // }
     if (gradeNav.style.display === "block"){
         gradeNav.style.display = "none"
     }else{
@@ -490,11 +492,9 @@ function clickNav(){
     let subjects = document.getElementById("subjects")
     if (gradeNav.style.display === "block"){
         gradeNav.style.display = "none"
-        window.location.hash=""
     }else{
         gradeNav.style.display = "none"
         subjects.style.display = "none"
-        window.location.hash=""
     }
 }
 function gradeCollapse(){
@@ -503,4 +503,30 @@ function gradeCollapse(){
     grade3.style.display="none"
     grade4.style.display="none"
     grade5.style.display="none"     
+}
+function navColapse(){
+    
+    if (menu.style.display === "flex"){
+        menu.style.display = "none"
+    }else{
+        menu.style.display = "flex"
+    }
+}
+function clickScrollNav(){
+    if(window.innerWidth < 501){
+        if(menu.style.display === "flex"){
+            menu.style.display = "none"
+        }
+        else{
+            menu.style.display = "none"
+        }
+    }
+}
+window.onresize = function(){
+    if(window.innerWidth > 501){
+        menu.style.display = "flex"
+    }
+    else{
+        menu.style.display = "none"
+    }
 }
