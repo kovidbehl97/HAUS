@@ -36,7 +36,7 @@ li{
 
 #back-to-top{
     cursor: pointer;
-    z-index: 1;
+    z-index: 100;
     margin-left: 93%;
     
 }
@@ -44,7 +44,7 @@ li{
     position: sticky;
     top: 80%;
     width: 60px;
-    z-index: 0;
+    z-index: 100;
     
 }
 
