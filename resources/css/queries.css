@@ -282,6 +282,9 @@
     .about-content h3{
         font-size: 160%;
     }
+    #main-content a{
+        margin-top: 50px;
+    }
 }
 
 /*phones (width smaller than 800px)*/
@@ -393,6 +396,9 @@
     }
 }
 @media only screen and (max-width: 501px){
+    html{
+        scroll-padding-top: 80px;
+    }
     #logo-img{
         margin-left: 3vh;
     }
@@ -422,8 +428,9 @@
         justify-content: center;
         align-items: center;    
         background-color: #00251d;
-        position: sticky;
-        position: -webkit-sticky;
+        /* position: sticky;
+        position: -webkit-sticky; */
+        position: fixed;
         top: 0;
         height: 100%;
         z-index: 100;
@@ -515,7 +522,9 @@
 
 
 
-
+    #main-conten a{
+        margin-top: 50px;
+    }
     .showcase-links{
         padding:15px 25px;
     }
@@ -602,6 +611,9 @@
     }
     #landa-showcase-content h3{
         margin: auto 30px auto 50px;
+    }
+    #main-content a{
+        margin-top: 80px;
     }
 }
 @media only screen and (max-width: 433px){
@@ -1059,7 +1071,7 @@
         font-size: 80%;
     }
     #main-content a{
-        margin-top: 80px;
+        margin-top: 60px;
     }
     #math-showcase-content h3{
         margin: auto 10px auto 20px;
