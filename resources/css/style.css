@@ -38,15 +38,14 @@ li{
     cursor: pointer;
     z-index: 1;
     margin-left: 93%;
-}
-#back-to-top::before{
-    display: none;
+    
 }
 #back-to-top img{
     position: sticky;
     top: 80%;
     width: 60px;
     z-index: 0;
+    
 }
 
 /* ------main section--------- */
