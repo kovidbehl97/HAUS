@@ -10,9 +10,10 @@
         <link rel="stylesheet" href="resources/css/style.css">
         <link rel="stylesheet" href="resources/css/queries.css">
     </head>
-    <body onscroll="scrollNav()">
+    <body onscroll="scrollNav(),clickScrollNav()">
+        <img onclick="navColapse()" id="mobile-menu" src="resources/css/images/open-menu.png" alt="menu">
         <div id="logo">
-            <img src="resources/css/images/logo.png" alt="logo">
+            <img id="logo-img" src="resources/css/images/logo.png" alt="logo">
             <h2>Home Academy US</h2>
         </div>
         <nav>
@@ -22,44 +23,44 @@
                     <a onclick="sub()">Subjects</a>
                     <ul id="subjects">
                         <li>
-                            <a onclick="maths()">Math</a>
-                            <ul id="maths">
+                            <a href="#math-showcase">Math</a>
+                            <!-- <ul id="maths">
                                 <li><a href="#math1" onclick="firsthGradeNav()">Grade-1</a></li>
                                 <li><a href="#math2" onclick="secondGradeNav()">Grade-2</a></li>
                                 <li><a href="#math3" onclick="thirdGradeNav()">Grade-3</a></li>
                                 <li><a href="#math4" onclick="fourthGradeNav()">Grade-4</a></li>
                                 <li><a href="#math5" onclick="fifthGradeNav()">Grade-5</a></li>
-                            </ul>
+                            </ul> -->
                         </li>
                         <li>
-                            <a onclick="science()">Science</a>
-                            <ul id="science">
+                            <a href="#science-showcase">Science</a>
+                            <!-- <ul id="science">
                                 <li><a href="#science1" onclick="firsthGradeNav()">Grade-1</a></li>
                                 <li><a href="#science2" onclick="secondGradeNav()">Grade-2</a></li>
                                 <li><a href="#science3" onclick="thirdGradeNav()">Grade-3</a></li>
                                 <li><a href="#science4" onclick="fourthGradeNav()">Grade-4</a></li>
                                 <li><a href="#science5" onclick="fifthGradeNav()">Grade-5</a></li>
-                            </ul>
+                            </ul> -->
                         </li>
                         <li>
-                            <a onclick="sst()">Social Studies</a>
-                            <ul id="sst">
+                            <a href="#sst-showcase">Social Studies</a>
+                            <!-- <ul id="sst">
                                 <li><a href="#sst1" onclick="firsthGradeNav()">Grade-1</a></li>
                                 <li><a href="#sst2" onclick="secondGradeNav()">Grade-2</a></li>
                                 <li><a href="#sst3" onclick="thirdGradeNav()">Grade-3</a></li>
                                 <li><a href="#sst4" onclick="fourthGradeNav()">Grade-4</a></li>
                                 <li><a href="#sst5" onclick="fifthGradeNav()">Grade-5</a></li>
-                            </ul>
+                            </ul> -->
                         </li>
                         <li>
-                            <a onclick="landa()">Language & Arts</a>
-                            <ul id="landa">
+                            <a href="#landa-showcase">Language & Arts</a>
+                            <!-- <ul id="landa">
                                 <li><a href="#landa1" onclick="firsthGradeNav()">Grade-1</a></li>
                                 <li><a href="#landa2" onclick="secondGradeNav()">Grade-2</a></li>
                                 <li><a href="#landa3" onclick="thirdGradeNav()">Grade-3</a></li>
                                 <li><a href="#landa4" onclick="fourthGradeNav()">Grade-4</a></li>
                                 <li><a href="#landa5" onclick="fifthGradeNav()">Grade-5</a></li>
-                            </ul>
+                            </ul> -->
                         </li>
                     </ul>
                 </li>
@@ -103,7 +104,7 @@
                     have in our homes. Let your child discover the real potential within.</p>
             </div>
         </div>
-        <section id="showcase" >
+        <section id="showcase" onclick="clickNav(),gradeCollapse()">
             <div class="showcase-box row">
                 <h2 id="math-showcase">
                     Maths
@@ -4637,7 +4638,7 @@
         <section id="contact-us" class="row" onclick="clickNav()">
             <h2 class="heading">Contact Us</h2>
             <span id="contact" class="heading-decoration"></span>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdZrYiYDraXEqG4ZH4DhslKPRTXze8QAmm2RnU5-QVonCK8cA/viewform?embedded=true" width="700" height="845" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdZrYiYDraXEqG4ZH4DhslKPRTXze8QAmm2RnU5-QVonCK8cA/viewform?embedded=true" width="700" height="950" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </section>    
         <footer>
             <div class="footer-contents">
