@@ -14,7 +14,6 @@ window.onbeforeunload =function(){
     window.scrollTo(0,0)
 }
 window.onload = function(){
-    console.log("hello")
     home.click()
 }
 
@@ -513,14 +512,13 @@ function navColapse(){
     }
 }
 function clickScrollNav(){
-    if(window.innerWidth < 501){
+        console.log("hello")
         if(menu.style.display === "flex"){
             menu.style.display = "none"
         }
         else{
             menu.style.display = "none"
         }
-    }
 }
 window.onresize = function(){
     if(window.innerWidth > 501){
