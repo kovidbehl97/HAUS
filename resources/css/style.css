@@ -53,90 +53,17 @@ header{
     font-weight: 400;
     font-size: 215%;
 }
-#logo img{
+#logo-img{
     margin: 40px;
     max-width: 95px;
     margin-left: 20vh;
 }
-/* nav{
+#mobile-menu{
+    display: none;
+}
+#menu{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    background-color: #00251d;
-    position: sticky;
-    position: -webkit-sticky;
-    top:0;
-    z-index: 100;
 }
-nav a{
-    text-decoration: none;
-    color: white;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: 110%;
-    padding: 5px 5px 5px 5px;
-    text-align: center;
-}
-nav a:hover,
-nav a:active{
-    color: #aed1c8;
-}
-nav > ul{
-    
-    align-items: center;
-}
-#menu > li{
-    padding: 15px;
-    border-radius: 3px;
-}
-#menu > li:hover,
-#menu > li:active {
-    cursor: pointer;
-}
-#subjects{
-    display: none;
-    margin-top: 14px;
-}
-#subjects li{
-    padding: 10px;
-    
-}
-#subjects a{
-    border: none;
-    padding: 10px;
-    text-align: center;
-}
-#gradesNav{
-    display: none;
-    margin-top: 14px;
-}
-#gradesNav li{
-    padding: 10px 15px;
-    background-color: #00251d;
-}
-#gradesNav a:hover,
-#gradesNav a:active{
-    color: #074722;
-}
-#gradesNav a{
-    border: none;
-    padding: 5px 30px 5px 0;
-    text-align: center;
-}
-#maths{
-    display: none;
-}
-#science{
-    display: none;
-}
-#sst{
-    display: none;
-}
-#landa{
-    display: none;
-}  */
 nav{
     display: flex;
     flex-direction: row;
@@ -215,7 +142,7 @@ nav > ul{
     padding: 5px 30px 5px 0;
     text-align: center;
 }
-#maths{
+/* #maths{
     display: none;
 }
 #science{
@@ -226,7 +153,7 @@ nav > ul{
 }
 #landa{
     display: none;
-}
+} */
 #main-content{
     height: 100%;
     padding-bottom: 200px;
