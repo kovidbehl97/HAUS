@@ -32,6 +32,22 @@ li{
     margin-bottom: 20px;
     padding: 0;
 }
+/* ------back to top--------- */
+
+#back-to-top{
+    cursor: pointer;
+    z-index: 1;
+    margin-left: 93%;
+}
+#back-to-top::before{
+    display: none;
+}
+#back-to-top img{
+    position: sticky;
+    top: 80%;
+    width: 60px;
+    z-index: 0;
+}
 
 /* ------main section--------- */
 
@@ -161,7 +177,7 @@ nav > ul{
     background-image:linear-gradient(#000000,#20945e91,#000000), url(images/background.jpg);
     background-size: cover;
     background-attachment: fixed;
-
+    z-index: 10;
 }
 #main-content h1{
     position: relative;
@@ -232,6 +248,7 @@ nav > ul{
 /* -------------intro------------- */
 
 #intro{
+    
     padding: 100px 80px 30px 80px;
     margin: 0 auto;
     font-family: 'Raleway',sans-serif;
