@@ -1,0 +1,30 @@
+@media only screen and (max-width: 1337px) and (orientation: landscape){
+    #back-to-top{
+        cursor: pointer;
+        z-index: 1;
+        margin-left: 90%;
+        
+    }
+    #back-to-top img{
+        position: sticky;
+        top: 90%;
+        width: 55px;
+        z-index: 0;
+        
+    }
+}
+@media only screen and (max-width: 824px) and (orientation: landscape){
+    #back-to-top{
+        cursor: pointer;
+        z-index: 1;
+        margin-left: 90%;
+        
+    }
+    #back-to-top img{
+        position: sticky;
+        top: 80%;
+        width: 55px;
+        z-index: 0;
+        
+    }
+}
