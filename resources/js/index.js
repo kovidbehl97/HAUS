@@ -524,11 +524,10 @@ function navColapse(){
     }
 }
 function clickScrollNav(){
-        console.log("hello")
-        if(menu.style.display === "flex"){
+        if(window.innerWidth < 501 && menu.style.display === "flex"){
             menu.style.display = "none"
         }
-        else{
+        else if(window.innerWidth < 501 && menu.style.display === "none"){
             menu.style.display = "none"
         }
 }
