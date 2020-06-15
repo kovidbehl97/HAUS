@@ -10,6 +10,7 @@ let gradeFour = document.getElementById("grade-4")
 let gradeFive = document.getElementById("grade-5")
 let home = document.getElementById("home")
 let menu = document.getElementById("menu")
+
 window.onbeforeunload =function(){
     window.scrollTo(0,0)
 }
@@ -501,7 +502,17 @@ function gradeCollapse(){
     grade2.style.display="none"
     grade3.style.display="none"
     grade4.style.display="none"
-    grade5.style.display="none"     
+    grade5.style.display="none"
+    gradeOne.classList.remove("grade-selected")
+    gradeTwo.classList.remove("grade-selected")
+    gradeThree.classList.remove("grade-selected")
+    gradeFour.classList.remove("grade-selected")
+    gradeFive.classList.remove("grade-selected")
+    gradeOne.classList.add("grade")
+    gradeTwo.classList.add("grade")
+    gradeThree.classList.add("grade")
+    gradeFour.classList.add("grade")
+    gradeFive.classList.add("grade")     
 }
 function navColapse(){
     
@@ -509,6 +520,7 @@ function navColapse(){
         menu.style.display = "none"
     }else{
         menu.style.display = "flex"
+        
     }
 }
 function clickScrollNav(){
@@ -521,10 +533,14 @@ function clickScrollNav(){
         }
 }
 window.onresize = function(){
+    
     if(window.innerWidth > 501){
         menu.style.display = "flex"
     }
     else{
         menu.style.display = "none"
     }
+}
+if(window.innerWidth < 501){
+    document.getElementsByTagName("body")[0].removeAttribute("onscroll")
 }
