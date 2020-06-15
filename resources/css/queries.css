@@ -135,6 +135,7 @@
     margin: auto 30px auto 50px;
     }
 }
+
 @media only screen and (max-width: 1054px){
     #logo-img{
         margin-left: 10vh;
@@ -156,8 +157,23 @@
     #showcase h3{
         font-size: 150%;
     }
+    #back-to-top{
+        cursor: pointer;
+        z-index: 1;
+        margin-left: 90%;
+        
+    }
+    #back-to-top img{
+        position: sticky;
+        top: 80%;
+        width: 55px;
+        z-index: 0;
+        
+    }
+    
 }
-@media only screen and (max-width: 1096px){
+
+@media only screen and (max-width: 1040px){
     #math-showcase-content h3,
     #sst-showcase-content h3{
     margin: auto 20px auto 30px;
@@ -171,6 +187,21 @@
     }
     #main-content a{
         margin-top: 20px;
+    }
+}
+@media only screen and (max-width: 1025px){
+    #back-to-top{
+        cursor: pointer;
+        z-index: 0;
+        margin-left: 90%;
+        
+    }
+    #back-to-top img{
+        position: sticky;
+        top: 90%;
+        width: 55px;
+        z-index: 0;
+        
     }
 }
 @media only screen and (max-width: 980px){
@@ -308,6 +339,7 @@
     }
 }
 @media only screen and (max-width: 660px){
+    
     #logo-img{
         width: 60px;
     }
@@ -344,6 +376,19 @@
     }
     #main-content span{
         font-size: 65%;
+    }
+    #back-to-top{
+        cursor: pointer;
+        z-index: 1;
+        margin-left: 85%;
+        
+    }
+    #back-to-top img{
+        position: sticky;
+        top: 80%;
+        width: 55px;
+        z-index: 0;
+        
     }
     #math-showcase-content h3,
     #sst-showcase-content h3{
@@ -527,6 +572,19 @@
 
     #main-conten a{
         margin-top: 50px;
+    }
+    #back-to-top{
+        cursor: pointer;
+        z-index: 0;
+        margin-left: 85%;
+        
+    }
+    #back-to-top img{
+        position: sticky;
+        top: 90%;
+        width: 55px;
+        z-index: 0;
+        
     }
     .showcase-links{
         padding:15px 25px;
@@ -1009,6 +1067,12 @@
     
 }
 @media only screen and (max-width: 433px){
+    #back-to-top{
+        cursor: pointer;
+        z-index: 0;
+        margin-left: 80%;
+        
+    }
     #math-showcase-content h3{
         margin: auto 20px auto 30px;
     }
@@ -1032,6 +1096,12 @@
     }
 }
 @media only screen and (max-width: 411px){
+    #back-to-top{
+        cursor: pointer;
+        z-index: 0;
+        margin-left: 80%;
+        
+    }
     iframe{
         min-width: 335px;
         width: 340px;
@@ -1047,6 +1117,12 @@
     }
 }
 @media only screen and (max-width: 391px){
+    #back-to-top{
+        cursor: pointer;
+        z-index: 0;
+        margin-left: 80%;
+        
+    }
     iframe{
         min-width: 345px;
     }
@@ -1104,9 +1180,28 @@
     #main-content a{
         width: 220px;
     }
+    #back-to-top{
+        cursor: pointer;
+        z-index: 0;
+        margin-left: 80%;
+        
+    }
 
 }
 @media only screen and (max-width: 322px){
+    #back-to-top{
+        cursor: pointer;
+        z-index: 0;
+        margin-left: 80%;
+        
+    }
+    #back-to-top img{
+        position: sticky;
+        top: 90%;
+        width: 55px;
+        z-index: 0;
+        
+    }
     iframe{
         min-width: 280px;
         width: 280px;
