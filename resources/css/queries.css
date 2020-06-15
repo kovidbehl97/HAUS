@@ -169,6 +169,9 @@
     #science-showcase-content h3{
         margin-left: 150px;
     }
+    #main-content a{
+        margin-top: 50px;
+    }
 }
 @media only screen and (max-width: 980px){
     nav a{
