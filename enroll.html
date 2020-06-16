@@ -13,9 +13,11 @@
         <form name="form" onsubmit="return calculate()" action="payment.html" enctype="text/plain" method="POST">
             <h1 class="heading">Enroll for your FREE class</h1>
             <div class="heading-decoration"></div><br>
-            <label for="email">Email address</label><br>
-            <input type="email" id="email" name="email" placeholder="enter your email" required><br>
-            <label for="grade">Select your Grade</label><br>
+            <label for="email">Email Address</label><br><br>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required><br>
+            <label for="student-name">Student Name</label><br><br>
+            <input type="text" cols="20" rows="1" id="student-name" placeholder="Student Name" required>
+            <label for="grade">Select your Grade</label><br><br>
             <select id="grade" name="grade" required>
                 <option value="5" id="grade1"onclick="grade1Cal()">Grade 1</option>
                 <option value="15" id="grade2"onclick="grade2Cal()">Grade 2</option>
@@ -33,7 +35,7 @@
             <label for="sst" class="sub">Social Studies</label><br>
             <input type="checkbox" name="landa" id="landa" value="5" onclick="checkSub(),landaCal()"/>
             <label for="landa" class="sub">Language & Arts</label><br>
-            <label for="bundle">Select the bundle best suited for you</label><br>
+            <label for="bundle">Select the bundle best suited for you</label><br><br>
             <select id="bundle" name="bundle" required>
                 <option value="5" id="bundle1"onclick="bundle1Cal()">Mon-Thurs / 45 minutes each subject</option>
                 <option value="5" id="bundle2"onclick="bundle2Cal()">Mon-Fri / 45 minutes each subject</option>
@@ -44,9 +46,14 @@
             <input type="time" id="from" required><br>
             <label for="to" class="time-label">To</label>
             <input type="time" id="to" required><br>
-            <label for="timezone">Mention your Time Zone, e.g., Eastern Time or Central Time or Mountain Time, etc.</label><br>
-            <textarea name="timezone" id="timezone" cols="20" rows="1" placeholder="your answer" required></textarea><br>
-            <input type="submit" id="submit" name="Submit" value="Submit">
+            <label for="timezone">Select your Time Zone</label><br><br>
+            <select name="timezone" id="timezone">
+                <option>Pacific Time(PT)</option>
+                <option>Mountain Time(MT)</option>
+                <option>Central Time(CT)</option>
+                <option>Eastern Time(ET)</option>
+            </select>
+            <input type="submit" id="submit" name="submit" value="Submit">
         </form>
         <script src="resources/js/enroll.js"></script>
     </body>
