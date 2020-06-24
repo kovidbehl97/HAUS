@@ -4,6 +4,14 @@
     #sst-showcase-content h3{
     margin: auto 130px auto 150px;
     }
+    #math-showcase,
+    #sst-showcase,
+    #science-showcase,
+    #landa-showcase{
+        text-align: center;
+        font-weight: 300;
+        font-size: 160%;
+    } 
 }
 @media only screen and (max-width: 1350px){
     #math-showcase-content h3,
@@ -121,7 +129,19 @@
         font-size: 160%;
         padding-bottom: 20px;
         padding-top: 20px;
-    }    
+        max-width: 200px;
+        width: 200px;
+    }  
+    .showcase-heading-imagediv{
+        max-height: 230px;
+    }  
+    #heading-img-math,
+    #heading-img-science,
+    #heading-img-sst,
+    #heading-img-landa{
+        height: 230px;
+    }
+
 }
 @media only screen and (max-width: 1096px){
     #math-showcase-content h3,
@@ -257,6 +277,12 @@
     #science-showcase-content h3{
         margin-left: 120px;
     }
+    #heading-img-math,
+    #heading-img-science,
+    #heading-img-sst,
+    #heading-img-landa{
+        height: 200px;
+    }
 }
 @media only screen and (max-width: 850px){
     #intro{
@@ -284,9 +310,14 @@
     #landa-showcase{
         text-align: center;
         font-weight: 300;
-        font-size: 140%;
+        font-size: 120%;
         padding-bottom: 20px;
         padding-top: 20px;
+        max-width: 150px;
+        width: 150px;
+    }
+    .showcase-heading-div{
+        width: 150px;
     }
     #showcase h3{
         font-size: 120%;
@@ -297,6 +328,12 @@
         height: 190px;
         object-fit: cover;
         object-position: 0 0;
+    }
+    #heading-img-math,
+    #heading-img-science,
+    #heading-img-sst,
+    #heading-img-landa{
+        height: 190px;
     }
     .showcase-links{
         margin-bottom: 50px;
@@ -401,6 +438,12 @@
     #science-showcase-content h3{
         margin-left: 60px;
     }
+    #heading-img-math,
+    #heading-img-science,
+    #heading-img-sst,
+    #heading-img-landa{
+        height: 150px;
+    }
     .copyright-content{
         display: block;
     }
@@ -438,6 +481,12 @@
     }
     #logo h2{
         margin-right: 8vh;
+    }
+    #heading-img-math,
+    #heading-img-science,
+    #heading-img-sst,
+    #heading-img-landa{
+        height: 140px;
     }
     iframe{
         width: 55vh;
@@ -625,6 +674,13 @@
     #showcase h3{
         font-size: 100%;
     }
+     #heading-img-math,
+    #heading-img-science,
+    #heading-img-sst,
+    #heading-img-landa{
+        height: 120px;
+    }
+
 }
 @media only screen and (max-width: 454px){
     iframe{
@@ -708,6 +764,12 @@
         margin-left: 2vh;
         top: 28px;
     }
+    #heading-img-math,
+    #heading-img-science,
+    #heading-img-sst,
+    #heading-img-landa{
+        height: 100px;
+    }
 }
 @media only screen and (max-width: 411px){
     iframe{
@@ -722,6 +784,12 @@
         margin-right: 6vh;
         margin-left: 2vh;
         top: 28px;
+    }
+    #heading-img-math,
+    #heading-img-science,
+    #heading-img-sst,
+    #heading-img-landa{
+        height: 90px;
     }
 }
 @media only screen and (max-width: 391px){
@@ -1257,5 +1325,30 @@
     #main-content a{
         width: 200px;
     }
+    #heading-img-math,
+    #heading-img-science,
+    #heading-img-sst,
+    #heading-img-landa{
+        height: 87px;
+    }
+    #heading-img-landa{
+        background-position-x: -150px;
+    }
+    #heading-img-math{
+        background-position-x: 160px;
+    }
 }
-
+@media only screen and (max-height: 414px){
+    #main-content a{
+        top: 0;
+    }
+    #main-content h1{
+        top:30px;
+    }
+    #main-content h2{
+        top: 30px;
+    }
+    #main-content h3{
+        top: 30px;
+    }
+}
