@@ -1338,7 +1338,7 @@
         background-position-x: 160px;
     }
 }
-@media only screen and (max-height: 414px){
+@media only screen and (max-height: 415px){
     #main-content a{
         top: 0;
     }
