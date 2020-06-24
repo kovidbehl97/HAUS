@@ -312,9 +312,34 @@ nav > ul{
     justify-content: center;
     align-items: center;
 }
-.showcase-heading-image{
+.showcase-heading-imagediv{
     max-height: 250px;
     width: 100%;
+}
+#heading-img-math{
+    background-image: url(images/math-showcase.jpg);
+    background-size: cover;
+    height: 250px;
+    background-position: right;
+}
+#heading-img-science{
+    background-image: url(images/science-showcase.jpg);
+    background-size: cover;
+    height: 250px;
+    background-position: left;
+}
+#heading-img-sst{
+    background-image: url(images/sst-showcase.jpg);
+    background-size: cover;
+    height: 250px;
+    background-position: center;
+}
+#heading-img-landa{
+    background-image: url(images/landa-showcase.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    background-position: right;
 }
 .showcase-image{
     min-width: 230px;
@@ -356,6 +381,9 @@ nav > ul{
 #science-showcase-content h3{
     margin-left: 230px;
 }
+.showcase-heading-div{
+    width: 230px;
+}
 #math-showcase,
 #sst-showcase,
 #science-showcase,
@@ -363,10 +391,9 @@ nav > ul{
     text-align: center;
     font-weight: 300;
     font-size: 180%;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    /* padding: 20px 0; */
     margin: auto;
-    min-width: 230px;
+    max-width: 230px;
     width: 230px;
     text-decoration: underline;
     text-decoration-color: #00251d;
