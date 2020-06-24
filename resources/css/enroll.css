@@ -172,14 +172,20 @@ label{
     max-width: 90%;
     margin: auto;
 }
+#tnc-label-text{
+    font-family: 'Lato',sans-serif;
+    font-weight: 400;
+    font-size: 90%;
+    float: left;
+    clear: both;
+    margin-bottom: 10px;
+}
 #tnc-text{
     font-family: 'Lato',sans-serif;
     font-weight: 400;
     font-size: 90%;
 }
 #tnc{
-    float: left;
-    clear: both;
     width: 12px;
     margin: 4px 0 0 4px;
     
