@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Enroll Now</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="resources/css/images/favicon.PNG" type="image/png">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="resources/css/enroll.css">
+        <link rel="stylesheet" href="resources/css/enrollQueries.css">
+    </head>
+    <body>
+        <div id="back-to-home"><a href="index.html">&#8592;</a></div>
+        <form name="form" onsubmit="return calculate()" action="payment.html" enctype="text/plain" method="POST">
+            <h1 class="heading">Enroll for your FREE class</h1>
+            <div class="heading-decoration"></div><br>
+            <label for="email">Email Address</label><br><br>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required><br>
+            <label for="student-name">Student Name</label><br><br>
+            <input type="text" cols="20" rows="1" id="student-name" placeholder="Student Name" required>
+            <label for="grade">Select your Grade</label><br><br>
+            <select id="grade" name="grade" required>
+                <option value="5" id="grade1"onclick="grade1Cal()">Grade 1</option>
+                <option value="15" id="grade2"onclick="grade2Cal()">Grade 2</option>
+                <option value="25" id="grade3"onclick="grade3Cal()">Grade 3</option>
+                <option value="35" id="grade4"onclick="grade4Cal()">Grade 4</option>
+                <option value="45" id="grade5"onclick="grade5Cal()">Grade 5</option>
+            </select><br><br>
+            <label for="subject">Select the Subjects you want classes for<abbr title="This field is mandatory" aria-label="required"></abbr></label><br>
+            <input type="radio" tabindex="-1" name="subject" id="check" style="width: 1px;"  required><br>
+            <input type="checkbox" name="math" id="math" value="5" onclick="checkSub(),mathCal(),bundleMath()"/>
+            <label for="math" class="sub" >Math</label>
+            <label for="bundle" class="bundleMath">Select the bundle best suited for you</label>
+            <select id="bundle" class="bundleMath" name="bundle" required>
+                <option value="5" id="bundle1"onclick="bundle1Cal()">Mon-Thurs | 1 hour each subject | $1 each subject</option>
+                <option value="5" id="bundle2"onclick="bundle2Cal()">Mon-Fri | 1 hour each subject | $1 each subject</option>
+                <option value="5" id="bundle3"onclick="bundle3Cal()">Mon-Fri | 1 on 1 session / 1 hour each subject | $1 each subject</option>
+            </select><br>
+            <input type="checkbox" name="science" id="science" value="5" onclick="checkSub(),scienceCal(),bundleScience()"/>
+            <label for="science" class="sub">Science</label>
+            <label for="bundle" class="bundleScience">Select the bundle best suited for you</label>
+            <select id="bundle" class="bundleScience" name="bundle" required>
+                <option value="5" id="bundle1"onclick="bundle1Cal()">Mon-Thurs | 1 hour each subject | $1 each subject</option>
+                <option value="5" id="bundle2"onclick="bundle2Cal()">Mon-Fri | 1 hour each subject | $1 each subject</option>
+                <option value="5" id="bundle3"onclick="bundle3Cal()">Mon-Fri | 1 on 1 session / 1 hour each subject | $1 each subject</option>
+            </select><br>
+            <input type="checkbox" name="sst" id="sst" value="5" onclick="checkSub(),sstCal(),bundleSst()"/>
+            <label for="sst" class="sub">Social Studies</label>
+            <label for="bundle" class="bundleSst">Select the bundle best suited for you</label>
+            <select id="bundle" class="bundleSst" name="bundle" required>
+                <option value="5" id="bundle1"onclick="bundle1Cal()">Mon-Thurs | 1 hour each subject | $1 each subject</option>
+                <option value="5" id="bundle2"onclick="bundle2Cal()">Mon-Fri | 1 hour each subject | $1 each subject</option>
+                <option value="5" id="bundle3"onclick="bundle3Cal()">Mon-Fri | 1 on 1 session / 1 hour each subject | $1 each subject</option>
+            </select><br>
+            <input type="checkbox" name="landa" id="landa" value="5" onclick="checkSub(),landaCal(),bundleLanda()"/>
+            <label for="landa" class="sub">Language & Arts</label>
+            <label for="bundle" class="bundleLanda">Select the bundle best suited for you</label>
+            <select id="bundle" class="bundleLanda" name="bundle" required>
+                <option value="5" id="bundle1"onclick="bundle1Cal()">Mon-Thurs | 1 hour each subject | $1 each subject</option>
+                <option value="5" id="bundle2"onclick="bundle2Cal()">Mon-Fri | 1 hour each subject | $1 each subject</option>
+                <option value="5" id="bundle3"onclick="bundle3Cal()">Mon-Fri | 1 on 1 session / 1 hour each subject | $1 each subject</option>
+            </select><br>
+            <h4>What is your preferred time range for classes? (e.g., 6 PM to 8 PM CST)</h4>
+            <label for="from" class="time-label">From</label>
+            <input type="time" id="from" required><br>
+            <label for="to" class="time-label">To</label>
+            <input type="time" id="to" required><br>
+            <label for="timezone">Select your Time Zone</label><br><br>
+            <select name="timezone" id="timezone">
+                <option>Pacific Time(PT)</option>
+                <option>Mountain Time(MT)</option>
+                <option>Central Time(CT)</option>
+                <option>Eastern Time(ET)</option>
+            </select><br><br>
+            <label id="tnc-label-text">Once you make the payment and enroll, your first class for each subject chosen by you, is free. In case you choose not to proceed further, you will get your money back.</label><br>
+            <div id="tnc-container">
+                <input type="checkbox" name="tnc" id="tnc" value="5" required/>
+                <label for="tnc" id="tnc-text">Do you agree?</label><br><br>
+            </div>
+            <input type="submit" id="submit" name="submit" value="Proceed to Pay">
+        </form>
+        <script src="resources/js/enroll.js"></script>
+    </body>
+</html>
