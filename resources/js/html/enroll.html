@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Enroll Now</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="resources/css/images/favicon.PNG" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500;600;700&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/queries.css">
+	<link rel="stylesheet" href="resources/css/enroll.css">
+	<link rel="stylesheet" href="resources/css/enrollQueries.css">
+</head>
+<body>
+	<div id="logo" style="background: white;z-index: 2222;position: relative;">
+        <img id="logo-img" src="resources/css/images/logo.png" alt="logo">
+        <h2>Home Academy US</h2>
+    </div>
+		
+	<div id="back-to-home"><a href="index.html">&#8592;</a></div>
+	<form name="form" onsubmit="return calculate()" action="save.php" enctype="text/plain" method="GET">
+		<h1 class="heading">Enroll for your FREE class</h1>
+		<div class="heading-decoration"></div><br>
+		
+		<label for="email">Email Address</label><br><br>
+		<input type="email" class="inputField" id="email" name="email" placeholder="Enter your Email" required><br>
+		
+		<label for="student-name">Student Name</label><br><br>
+		<input type="text" class="inputField" name="name" cols="20" rows="1" id="student-name" placeholder="Student Name" required>
+		
+		<label for="parentName">Parents Full Name</label><br><br>
+		<input type="text" class="inputField" id="parentName" name="parentName" placeholder="Parents Full Name" required><br>
+		
+		<label for="parentPhone">Parents Phone Number</label><br><br>
+		<input type="tel" class="inputField" id="parentPhone" name="parentPhone" placeholder="Parents Phone Number" required><br>
+		
+		
+		<label for="grade">Select your Grade</label><br><br>
+		<select id="grade" name="grade" required>
+			<option value="Grade 1" id="grade1" onclick="grade1Cal()">Grade 1</option>
+			<option value="Grade 2" id="grade2" onclick="grade2Cal()">Grade 2</option>
+			<option value="Grade 3" id="grade3" onclick="grade3Cal()">Grade 3</option>
+			<option value="Grade 4" id="grade4" onclick="grade4Cal()">Grade 4</option>
+			<option value="Grade 5" id="grade5" onclick="grade5Cal()">Grade 5</option>
+		</select><br><br>
+		
+		<label for="subject">Select the Subjects you want classes for<abbr title="This field is mandatory" aria-label="required"></abbr></label>
+		<br><br>
+		
+		<input class="subject" type="checkbox" name="math" id="math" value="Math" data-bundle="bundleMath" />
+		<label for="math" class="sub">Math</label>
+		<label for="bundleMath" id="labelbundleMath">Select the bundle best suited for you</label>
+		<select id="bundleMath" class="bundleMath bundle" name="bundleMath" >
+			<option value="Mon-Thurs | 1 hour each subject">Mon-Thurs | 1 hour session</option>
+			<option value="Mon-Fri | 1 hour each subject">Mon-Fri | 1 hour session</option>
+			<option value="Mon-Fri | twice a week">Twice a week | 1 hour session</option>
+		</select><br>
+		
+		<input class="subject" type="checkbox" name="science" id="science" value="Science" data-bundle="bundleScience"/>
+		<label for="science" class="sub">Science</label>
+		<label for="bundleScience" id="labelbundleScience">Select the bundle best suited for you</label>
+		<select id="bundleScience" class="bundleScience bundle" name="bundleScience" >
+			<option value="Mon-Thurs | 1 hour each subject">Mon-Thurs | 1 hour session</option>
+			<option value="Mon-Fri | 1 hour each subject">Mon-Fri | 1 hour session</option>
+			<option value="Mon-Fri | twice a week">Twice a week | 1 hour session</option>
+		</select><br>
+		
+		<input class="subject" type="checkbox" name="sst" id="sst" value="SST" data-bundle="bundleSst"/>
+		<label for="sst" class="sub">Social Studies</label>
+		<label for="bundleSst" id="labelbundleSst">Select the bundle best suited for you</label>
+		<select id="bundleSst" class="bundleSst bundle" name="bundleSst" >
+			<option value="Mon-Thurs | 1 hour each subject">Mon-Thurs | 1 hour session</option>
+			<option value="Mon-Fri | 1 hour each subject">Mon-Fri | 1 hour session</option>
+			<option value="Mon-Fri | twice a week">Twice a week | 1 hour session</option>
+		</select><br>
+		
+		<input class="subject" type="checkbox" name="landa" id="landa" value="Language & Arts" data-bundle="bundleLanda"/>
+		<label for="landa" class="sub">Language & Arts</label>
+		<label for="bundleLanda" id="labelbundleLanda">Select the bundle best suited for you</label>
+		<select id="bundleLanda" class="bundleLanda bundle" name="bundleLanda" >
+				<option value="Mon-Thurs | 1 hour each subject">Mon-Thurs | 1 hour sessiont</option>
+			<option value="Mon-Fri | 1 hour each subject">Mon-Fri | 1 hour session</option>
+			<option value="Mon-Fri | twice a week">Twice a week | 1 hour session</option>
+		</select><br>
+		
+		<br>
+		<div id="seepricing-container"><a href="#" id="seepricing">See Pricing</a></div>
+		<br><br>
+		
+		<label for="timeslot">Select your preferred time slot</label><br><br>
+		<select class="selectField" name="timeslot" id="timeslot">
+			<option>Morning</option>
+			<option>Afternoon</option>
+			<option>Evening</option>
+			<option>I am flexible (can attend any timeslot)</option>
+		</select><br><br>
+		
+		<label for="timezone">Select your Time Zone</label><br><br>
+		<select class="selectField" name="timezone" id="timezone">
+			<option>Pacific Time(PT)</option>
+			<option>Mountain Time(MT)</option>
+			<option>Central Time(CT)</option>
+			<option>Eastern Time(ET)</option>
+		</select><br><br>
+		
+		<input type="number" value="0" id="totalAmount" name="amount" style="display:none;"><br>
+		
+		<label id="tnc-label-text">Once you make the payment and enroll, your first class for each subject chosen by you, is free. In case you choose not to proceed further, you will get your money back.</label><br>
+		<div id="tnc-container">
+			<input type="checkbox" name="tnc" id="tnc" value="true" required/>
+			<label for="tnc" id="tnc-text">Do you agree?</label><br><br>
+		</div>
+		<button type="submit" id="submit" name="submit" >Proceed to Pay (Amount) $ <span id="amount"></span></button>
+	</form>
+	<script src="resources/js/enroll.js"></script>
+</body>
+</html>

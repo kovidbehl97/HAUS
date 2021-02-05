@@ -1,0 +1,205 @@
+@media only screen and (max-width: 2560px){
+    #back-to-home{
+        /* padding-left: 900px; */
+        position: relative;
+        left: 35%;
+    }
+}
+@media only screen and (max-width: 2415px){
+    #back-to-home{
+        position: relative;
+        left: 32%;
+    }
+}
+@media only screen and (max-width: 2088px){
+    #back-to-home{
+        
+        position: relative;
+        left: 30%;
+    }
+}
+@media only screen and (max-width: 1826px){
+    #back-to-home{
+        
+        position: relative;
+        left: 28%;
+    }
+}
+@media only screen and (max-width: 1666px){
+    #back-to-home{
+        position: relative;
+        left: 25%;
+    }
+}
+@media only screen and (max-width: 1666px){
+    #back-to-home{
+        position: relative;
+        left: 25%;
+    }
+}
+@media only screen and (max-width: 1441px){
+    #back-to-home{
+        position: relative;
+        left: 20%;
+    }
+}
+@media only screen and (max-width: 1216px){
+    #back-to-home{
+        position: relative;
+        left: 15%;
+    }
+}
+@media only screen and (max-width: 1041px){
+    #back-to-home{
+        position: relative;
+        left: 10%;
+    }
+}
+@media only screen and (max-width: 895px){
+    #back-to-home{
+        position: relative;
+        left: 5%;
+    }
+}
+@media only screen and (max-width: 793px){
+    #back-to-home{
+        position: absolute;
+        top: 10%;
+        left: 5%;
+    }
+    #back-to-home a{
+        color: black;
+    }
+    form{
+        width: auto;
+        margin: 0;
+        border-radius: 0;
+    }
+}
+@media only screen and (max-width: 446px){
+    h4{
+        margin-bottom: 20px;
+        font-size: 90%;
+    }
+    label{
+        margin-left: 0;
+        font-size: 90%;
+        margin-bottom: 0;
+    }
+    .heading{
+        font-size: 220%;
+    }
+    .sub{
+        font-size: 70%;
+    }
+    #math{
+        margin-left: 20px;
+        width: 12px;
+        position: relative;
+        top: 2px;
+    }
+    #science{
+        margin-left: 20px;
+        width: 12px;
+        position: relative;
+        top: 2px;
+    }
+    #sst{
+        margin-left: 20px;
+        width: 12px;
+        position: relative;
+        top: 2px;
+    }
+    #landa{
+        margin-left: 20px;
+        width: 12px;
+        position: relative;
+        top: 2px;
+    }
+    #email{
+        height: 35px;
+        font-size: 70%;
+    }
+    #student-name{
+        height: 35px;
+        font-size: 70%;
+    }
+    #parentName{
+        height: 35px;
+        font-size: 70%;
+    }
+    #parentPhone{
+        height: 35px;
+        font-size: 70%;
+    }
+    #seepricing{
+        font-size: 80%;
+    }
+    #timeslot{
+        height: 35px;
+        font-size: 70%;
+        padding-left: 5px;
+    }
+    #grade{
+        height: 35px;
+        font-size: 70%;
+        padding-left: 5px;
+    }
+    .bundleMath,
+    .bundleScience,
+    .bundleSst,
+    .bundleLanda{
+        height: 35px;
+        font-size: 70%;
+        padding-left: 5px;
+    }
+    #landa{
+        margin-bottom: 0px;
+    }
+    #bundle{
+        height: 35px;
+        font-size: 70%;
+        padding-left: 5px;
+    }
+    #from{
+        height: 35px;
+        font-size: 100%;
+    }
+    #to{
+        height: 35px;
+        font-size: 100%;
+        margin-bottom: 0;
+    }
+    #timezone{
+        height: 35px;
+        font-size: 70%;
+        padding-left: 5px;
+    }
+    #submit{
+        height: 35px;
+        margin-bottom: 0px;
+        font-size: 70%;
+    }
+    #tnc-label-text{
+        font-size: 80%;
+        margin-bottom: 2px;
+    }
+    #tnc-text{
+        font-size: 80%;
+    }
+    #tnc{
+        width: 11px;
+    }
+    #tnc-container{
+        max-width: 98%;
+    }
+}
+@media only screen and (max-width: 378px){
+    form{
+        padding: 20px;
+    }
+    .heading{
+        width: 70%;
+        margin: auto;
+    }
+}

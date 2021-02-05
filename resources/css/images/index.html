@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
+  </head>
+
+  <body>
+    <div style="height: 0vh; width: 100vw;" id="mapContainer" class="container-1">
+      <input
+        placeholder="Search for a Place or an Address."
+        type="text"
+        name="search"
+        id="search"
+        value="Delhi, India"
+        onkeydown="autosuggest(this)"
+        autofocus/>
+      <i class="fa fa-search fa-search-custom" aria-hidden="true"></i>
+      <div class="dropdown">
+        <ul id="list"></ul>
+      </div>
+      <button id="locat" onclick="getCoord()">Get Location</button>
+      <p id ="loca"></p>
+    </div>
+  </body>
+
+  <script>
+    window.apikey = 'fyXT4ICDo2XntVRqlOCYxwDPFxcIMBhM9N7u5l6y6HQ'
+
+    function moveMapToIndia(map){
+      map.setCenter({lat:28.7041, lng:77.1025});
+      map.setZoom(10);
+    }
+   
+    var platform = new H.service.Platform({
+      apikey: window.apikey,
+    });
+    var defaultLayers = platform.createDefaultLayers();
+
+    //this map is centered over india
+    var map = new H.Map(
+      document.getElementById("mapContainer"),
+      defaultLayers.vector.normal.map,
+      {
+        center: { lat: 28.7041, lng: 77.1025 },
+        zoom: 10,
+        pixelRatio: window.devicePixelRatio || 1,
+      }
+    );
+
+    window.addEventListener("resize", () => map.getViewPort().resize());
+
+    //make the map interactive
+    // MapEvents enables the event system
+    // Behavior implements default interactions for pan/zoom (also on mobile touch environments)
+    var behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
+
+    // Create the default UI components 
+    var ui = H.ui.UI.createDefault(map, defaultLayers);
+    // Now use the map as required...
+    window.onload = function () {
+      getDeafultLocation();
+    }  
+
+    //auto suggest is for the search-box to give suggestions and is restricted to india
+    const autosuggest = (e) => {
+      console.log(e.metaKey,"metakey")
+     if(event.metaKey){
+       console.log(event.metaKey,"metakey inside")
+       return
+     }
+     let searchString = e.value
+      if (searchString != "") {
+        fetch
+          (`https://autosuggest.search.hereapi.com/v1/autosuggest?apiKey=${window.apikey}&at=28.7041,77.1025&limit=5&resultType=city&country=IND&q=${searchString}&lang=en-US`)
+          .then((res) => res.json())
+          .then((json) => {
+            if (json.length != 0) {
+              document.getElementById("list").innerHTML = ``;
+              let dropData = json.items.map((item) => {
+                
+                if ((item.position != undefined) & (item.position != ""))
+                  document.getElementById(
+                    "list"
+                  ).innerHTML += `<li onClick="addMarkerToMap(${item.position.lat},${item.position.lng},'${item.title}')">${item.title}</li>`+ `lat ${item.position.lat}, long ${item.position.lng}`;
+                
+              });
+            }
+          });
+      }
+    };
+
+    //this runs when you click on get location button(gives current localitiy)
+    function getCoord(){
+      navigator.geolocation.getCurrentPosition(function(position){
+        let lat = position.coords.latitude
+        let lng = position.coords.longitude
+        console.log(lat+","+lng)
+        var platform = new H.service.Platform({
+        'apikey': `${window.apikey}`
+        });
+        var service = platform.getSearchService();
+        service.reverseGeocode({
+          at: `${lat},${lng}`
+        }, (result) => {
+          result.items.forEach((item) => {
+            document.getElementById('loca').innerHTML = item.address.district +","+ item.address.city
+          });
+      })
+    },function(){enableHighAccuracy:true})}
+    
+    function getDeafultLocation(){
+      var lat=28.7041;
+      var lng=77.1025;
+      var title = "Delhi , India";
+      addMarkerToMap(lat, lng, title);
+    }
+    
+    const addMarkerToMap = (lat, lng, title) => {
+      map.removeObjects(map.getObjects())
+      document.getElementById("search").value =  title;
+      var selectedLocationMarker = new H.map.Marker({ lat, lng });
+      map.addObject(selectedLocationMarker);
+      document.getElementById("list").innerHTML = ``;
+      map.setCenter({ lat, lng }, true); 
+    };    
+    
+  </script>
+</html>
